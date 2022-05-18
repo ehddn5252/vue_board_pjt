@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.CommentsDto;
 import com.ssafy.vue.service.CommentsService;
-import com.ssafy.vue.service.CommentsService;
 
 import io.swagger.annotations.ApiOperation;
 

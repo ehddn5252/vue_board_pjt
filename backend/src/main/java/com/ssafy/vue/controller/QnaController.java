@@ -1,5 +1,6 @@
 package com.ssafy.vue.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -16,8 +17,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.util.PageNavigation;
 import com.ssafy.vue.dto.QnaDto;
 import com.ssafy.vue.service.QnaService;
 
@@ -80,4 +83,22 @@ public class QnaController {
 		}
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
+    
+    @GetMapping("/list")
+    public ResponseEntity<?> list(@RequestParam Map<String, String> map) throws Exception {
+       Map<String,Object> retMap = new HashMap<String,Object>(); 
+       String spp = map.get("spp"); // size per page (페이지당 글갯수)
+       retMap.put("spp", spp != null ? spp : "10");
+       List<QnaDto> list = qnaService.selectQnaByName(map);
+       PageNavigation pageNavigation = qnaService.makePageNavigation(map);
+       retMap.put("qnalist", list);
+       retMap.put("navigation", pageNavigation);
+       
+       if (list != null && !list.isEmpty()) {
+          return new ResponseEntity<Map>(retMap, HttpStatus.OK);
+       } else {
+          return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
+       }
+    }
+    
 }
