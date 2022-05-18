@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.SidoGugunCodeDto;
+import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.service.HouseMapService;
 
 @RestController
@@ -48,5 +48,16 @@ public class HouseMapController {
 	public ResponseEntity<List<HouseInfoDto>> apt(@RequestParam("dong") String dong) throws Exception {
 		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getAptInDong(dong), HttpStatus.OK);
 	}
-	
+
+	// 아파트 이름으로 찾기
+	@GetMapping("/aptName")
+	public ResponseEntity<List<HouseInfoDto>> aptName(@RequestParam("aptName") String aptName, @RequestParam("dong") String dong) throws Exception {
+		
+		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getAptInName(aptName, dong), HttpStatus.OK);
+	}
+
+	@GetMapping("/apt/recommend")
+	public ResponseEntity<List<HouseInfoDto>> aptRecommend(@RequestParam("dong") String dong,@RequestParam("price") String price,@RequestParam("buildyear") String buildyear) throws Exception {
+		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getRecommendList(dong, price, buildyear), HttpStatus.OK);
+	}
 }
