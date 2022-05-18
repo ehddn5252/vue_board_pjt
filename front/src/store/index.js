@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import http from "@/api/http";
-import createPersistedState from "vuex-persistedstate";
+// import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex);
 
@@ -68,11 +68,9 @@ export default new Vuex.Store({
     },
     UPDATE_TODO_STATUS(state, todoItem) {
       state.todos = state.todos.map((todo) => {
-        if (todo == todoItem) {
+        if (todo === todoItem) {
           return {
-            // todo를 복사하고
             ...todo,
-            // todoItem의 completed 상태를 반대로 바꿔라
             completed: !todoItem.completed,
           };
         }
@@ -152,10 +150,10 @@ export default new Vuex.Store({
     //////////////////////////// Todo List end //////////////////////////////////
   },
   modules: {},
-  plugins: [
-    createPersistedState({
-      // 브라우저 종료시 제거하기 위해 localStorage가 아닌 sessionStorage로 변경. (default: localStorage)
-      storage: sessionStorage,
-    }),
-  ],
+  // plugins: [
+  //   createPersistedState({
+  //     // 브라우저 종료시 제거하기 위해 localStorage가 아닌 sessionStorage로 변경. (default: localStorage)
+  //     storage: sessionStorage,
+  //   }),
+  // ],
 });

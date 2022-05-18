@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#">
+    <b-navbar toggleable="lg" id="header" class="fixed-top">
+      <b-navbar-brand href="#" class="container d-flex align-items-center">
         <router-link to="/">
           <img
             src="@/assets/ssafy_logo.png"
@@ -28,6 +28,12 @@
             ></b-nav-item
           >
           <b-nav-item href="#"
+            ><router-link :to="{ name: 'qna' }" class="link"
+              ><b-icon icon="journal" font-scale="1.5"></b-icon>
+              QnA</router-link
+            ></b-nav-item
+          >
+          <b-nav-item href="#"
             ><router-link :to="{ name: 'instagram' }" class="link"
               ><b-icon icon="instagram" font-scale="1.5"></b-icon>
               인별그램</router-link
@@ -37,24 +43,6 @@
             ><router-link :to="{ name: 'house' }" class="link"
               ><b-icon icon="house-fill" font-scale="1.5"></b-icon>
               아파트정보</router-link
-            ></b-nav-item
-          >
-          <b-nav-item href="#"
-            ><router-link :to="{ name: 'todo' }" class="link"
-              ><b-icon icon="calendar-check" font-scale="1.5"></b-icon> 실거래가
-              조회</router-link
-            ></b-nav-item
-          >
-          <b-nav-item href="#"
-            ><router-link :to="{ name: 'todo' }" class="link"
-              ><b-icon icon="calendar-check" font-scale="1.5"></b-icon> 관심지역
-              조회</router-link
-            ></b-nav-item
-          >
-          <b-nav-item href="#"
-            ><router-link :to="{ name: 'todo' }" class="link"
-              ><b-icon icon="calendar-check" font-scale="1.5"></b-icon>
-              로그인</router-link
             ></b-nav-item
           >
           <b-nav-item href="#"
