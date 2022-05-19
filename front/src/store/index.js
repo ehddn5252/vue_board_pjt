@@ -111,9 +111,6 @@ export default new Vuex.Store({
       });
     },
 
-    SET_DETAIL_AROUND_STORE(state, aroundStore) {
-      state.aroundStore = aroundStore;
-    },
     CLEAR_SIDO_LIST(state) {
       state.sidos = [{ value: null, text: "시도 선택" }];
     },
@@ -129,6 +126,9 @@ export default new Vuex.Store({
     SET_DETAIL_HOUSE(state, house) {
       console.log("Mutations", house);
       state.house = house;
+    },
+    SET_DETAIL_AROUND_STORE(state, aroundStore) {
+      state.aroundStore = aroundStore;
     },
     /////////////////////////////// House end /////////////////////////////////////
 
@@ -327,7 +327,15 @@ export default new Vuex.Store({
       // console.log(commit, house);
       commit("SET_DETAIL_HOUSE", house);
     },
+
     /////////////////////////////// House end /////////////////////////////////////
+
+    ////////////////////////////
+    detailAroundStore({ commit }, house) {
+      // 나중에 house.일련번호를 이용하여 API 호출
+      // console.log(commit, house);
+      commit("SET_DETAIL_AROUND_STORE", house);
+    },
 
     /////////////////////////////// Environ end /////////////////////////////////////
 

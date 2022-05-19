@@ -1,6 +1,7 @@
 <template>
   <b-row
     class="m-2"
+    @click="selectAroundStore"
     @mouseover="colorChange(true)"
     @mouseout="colorChange(false)"
     :class="{ 'mouse-over-bgcolor': isColor }"

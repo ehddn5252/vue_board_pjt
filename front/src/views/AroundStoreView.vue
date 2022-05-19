@@ -3,24 +3,25 @@
     <h3 class="underline-steelblue">
       <b-icon icon="person-lines-fill"></b-icon> AroundStore Service
     </h3>
-    <b-col>
-      <b-row>
-        <b-col>
-          <around-store-search-bar></around-store-search-bar>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col cols="6" align="left">
-          <around-store-list />
-        </b-col>
-        <b-col cols="6">
+    <b-row>
+      <b-col>
+        <around-store-search-bar></around-store-search-bar>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col cols="6" align="left">
+        <around-store-list />
+      </b-col>
+
+      <b-col>
+        <b-row>
+          <around-store-map></around-store-map>
+        </b-row>
+        <b-row>
           <around-store-detail></around-store-detail>
-        </b-col>
-      </b-row>
-    </b-col>
-    <b-col>
-      <around-store-map></around-store-map>
-    </b-col>
+        </b-row>
+      </b-col>
+    </b-row>
     <!-- <router-view></router-view> -->
   </b-container>
 </template>
