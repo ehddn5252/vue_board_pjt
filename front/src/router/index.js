@@ -60,6 +60,61 @@ const routes = [
       },
     ],
   },
+
+  // {
+  //   path: "/interestinfo",
+  //   name: "interestinfo",
+  //   redirect: "/interestinfo/store",
+  //   component: () => import("@/views/AroundStoreView.vue"),
+  // },
+
+  {
+    path: "/interestinfo",
+    name: "interestinfo",
+    component: () => import("@/views/AroundStoreView.vue"),
+    redirect: "/interestinfo/store",
+    children: [
+      {
+        path: "store",
+        name: "store",
+        // component: () => import("@/components/around/AroundStoreSearchBar.vue"),
+      },
+    ],
+  },
+
+  {
+    path: "/qna",
+    name: "qna",
+    component: () => import("@/views/QnaView.vue"),
+    redirect: "/qna/list",
+    children: [
+      {
+        path: "list",
+        name: "qnaList",
+        component: () => import("@/components/qna/QnaList.vue"),
+      },
+      {
+        path: "write",
+        name: "qnaRegister",
+        component: () => import("@/components/qna/QnaRegister.vue"),
+      },
+      {
+        path: "detail/:qnano",
+        name: "qnaDetail",
+        component: () => import("@/components/qna/QnaDetail.vue"),
+      },
+      {
+        path: "modify/:qnano",
+        name: "qnaModify",
+        component: () => import("@/components/qna/QnaModify.vue"),
+      },
+      {
+        path: "delete/:qnano",
+        name: "qnaDelete",
+        component: () => import("@/components/qna/QnaDelete.vue"),
+      },
+    ],
+  },
   {
     path: "/qna",
     name: "qna",

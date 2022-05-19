@@ -14,6 +14,7 @@
     "core-js": "^3.8.3",
     "moment": "^2.29.3",
     "vue": "^2.6.14",
+    "vue-kakao-sdk": "^0.2.5",
     "vue-router": "^3.5.1",
     "vuetify": "^2.6.0",
     "vuex": "^3.6.2",
@@ -37,5 +38,10 @@
     "vue-cli-plugin-vuetify": "~2.4.8",
     "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
+  },
+  "eslintConfig": {
+    "globals": {
+      "kakao": false
+    }
   }
 }

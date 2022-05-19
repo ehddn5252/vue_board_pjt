@@ -33,7 +33,9 @@
               QnA</router-link
             ></b-nav-item
           >
+
           <!-- <b-nav-item href="#"
+
             ><router-link :to="{ name: 'instagram' }" class="link"
               ><b-icon icon="instagram" font-scale="1.5"></b-icon>
               인별그램</router-link
@@ -52,9 +54,9 @@
             ></b-nav-item
           >
           <b-nav-item href="#"
-            ><router-link :to="{ name: 'todo' }" class="link"
+            ><router-link :to="{ name: 'interestinfo' }" class="link"
               ><b-icon icon="calendar-check" font-scale="1.5"></b-icon>
-              TodoList</router-link
+              주변상권조회</router-link
             ></b-nav-item
           >
         </b-navbar-nav>

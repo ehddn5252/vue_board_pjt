@@ -4,9 +4,11 @@
       <b-col>
         <b-input-group prepend="댓글" class="mt-3">
           <b-form-input
+
             v-on:submit.native.prevent="onSubmit"
             v-model.trim="content"
             v-on:keydown.enter.prevent="registComment"
+
           ></b-form-input>
           <b-input-group-append>
             <b-button variant="outline-success" @click="registComment"
@@ -39,6 +41,7 @@ export default {
         // 나중에 동적으로 이름 바뀌도록 수정
         userid: "ssafy",
       };
+
       if (comment.content) {
         http
           .post(`/comments`, comment)
