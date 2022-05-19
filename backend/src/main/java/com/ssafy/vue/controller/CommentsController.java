@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiOperation;
 
 @CrossOrigin(origins = { "*" }, maxAge = 6000)
 @RestController
-@RequestMapping("/Comments")
+@RequestMapping("/comments")
 public class CommentsController {
 
 	private static final Logger logger = LoggerFactory.getLogger(CommentsController.class);
@@ -35,8 +35,8 @@ public class CommentsController {
 	private CommentsService commentsService;
 
     @ApiOperation(value = "qnano에 맞는 댓글 정보를 반환한다.", response = List.class)
-	@GetMapping
-	public ResponseEntity<List<CommentsDto>> selectCommentByQna(int qnano) throws Exception {
+	@GetMapping("{qnano}")
+	public ResponseEntity<List<CommentsDto>> selectCommentByQna(@PathVariable int qnano) throws Exception {
 		logger.debug("retrieveComments - 호출");
 		return new ResponseEntity<List<CommentsDto>>(commentsService.selectCommentByQna(qnano), HttpStatus.OK);
 	}

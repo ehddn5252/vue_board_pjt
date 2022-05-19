@@ -6,7 +6,7 @@
 
 	
 	<!-- 해당 qna에 대한 댓글 조회 -->
-	<select id="selectCommentByQna" parameterType="int" resultType="com.ssafy.vue.dto.CommentsDto">
+	<select id="selectCommentByQna" parameterType="int" resultType="CommentsDto">
 		select commentsno, userid, qnano, content, regtime
 		from comments
 		where qnano=#{qnano}
@@ -14,7 +14,7 @@
 	
 
 	<!-- 댓글 등록 -->
-	<insert id="insertComments" parameterType="commentsDto">
+	<insert id="insertComments" parameterType="CommentsDto">
 		insert into comments(
 			userid, qnano, content
 		) values (
@@ -23,7 +23,7 @@
 	</insert>
 	
 	<!-- 댓글 수정 -->
-	<update id="updateComments" parameterType="commentsDto">
+	<update id="updateComments" parameterType="CommentsDto">
 		update comments
 		   set qnano = #{qnano}, 
 		   	   userid = #{userid}, 
@@ -32,7 +32,7 @@
 	</update>
 
 	<!-- 댓글 삭제 -->
-	<delete id="deleteBoard" parameterType="int">
+	<delete id="deleteComments" parameterType="int">
 		delete 
 		from comments 
 		where commentsno= #{commentsno}

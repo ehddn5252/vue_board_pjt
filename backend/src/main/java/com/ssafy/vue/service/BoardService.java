@@ -10,4 +10,6 @@ public interface BoardService {
 	public boolean writeBoard(Board board);
 	public boolean updateBoard(Board board);
 	public boolean deleteBoard(int articleno);
+	//조회수 수정
+	public boolean updateHit(int articleno);
 }
