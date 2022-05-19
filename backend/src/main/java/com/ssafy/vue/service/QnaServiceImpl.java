@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ssafy.util.PageNavigation;
 import com.ssafy.vue.dto.QnaDto;
 import com.ssafy.vue.mapper.QnaMapper;
 
+@Service
 public class QnaServiceImpl implements QnaService{
 	
 	@Autowired
@@ -22,9 +24,9 @@ public class QnaServiceImpl implements QnaService{
 	}
 
 	@Override
-	public List<QnaDto> selectQnaByNo() {
+	public List<QnaDto> selectQnaByNo(int qnano) {
 		// TODO Auto-generated method stub
-		return qnaMapper.selectQnaByNo();
+		return qnaMapper.selectQnaByNo(qnano);
 	}
 
 	@Override
@@ -34,7 +36,7 @@ public class QnaServiceImpl implements QnaService{
       Map<String, Object> param = new HashMap<String, Object>();
       String key = map.get("key");
       if("userid".equals(key))
-         key = "g.userid";
+         key = "q.userid";
       param.put("key", key == null ? "" : key);
       param.put("word", map.get("word") == null ? "" : map.get("word"));
       int currentPage = Integer.parseInt(map.get("pg") == null ? "1" : map.get("pg"));
@@ -86,4 +88,10 @@ public class QnaServiceImpl implements QnaService{
 	      
 	      return pageNavigation;
 	   }
+
+	@Override
+	public boolean updateHit(int qnano) {
+		// TODO Auto-generated method stub
+		return qnaMapper.updateHit(qnano)==1;
+	}
 }

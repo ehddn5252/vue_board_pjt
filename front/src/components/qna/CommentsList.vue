@@ -19,7 +19,7 @@ import CommentsItem from "@/components/qna/item/CommentsItem";
 import http from "@/api/http";
 
 export default {
-  name: "CommentsoList",
+  name: "CommentsList",
   data() {
     return {
       comments: [],
@@ -30,6 +30,19 @@ export default {
   },
   components: {
     CommentsItem,
+  },
+  method: {
+    updateComments() {
+      console.log("변경~~~~~~~~");
+      http.get(`/comments/${this.qnano}`).then(({ data }) => {
+        console.log(data);
+        this.comments = data;
+      });
+    },
+    // changeComments() {
+    //   console.log("CommentsList");
+    //   this.$emit("changeComments");
+    // },
   },
   created() {
     console.log(this.qnano);

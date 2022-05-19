@@ -4,8 +4,11 @@
       <b-col>
         <b-input-group prepend="댓글" class="mt-3">
           <b-form-input
+
+            v-on:submit.native.prevent="onSubmit"
             v-model.trim="content"
-            @keypress.enter="registComment"
+            v-on:keydown.enter.prevent="registComment"
+
           ></b-form-input>
           <b-input-group-append>
             <b-button variant="outline-success" @click="registComment"
@@ -39,12 +42,20 @@ export default {
         userid: "ssafy",
       };
 
-      http.put(`/comments/${this.qnano}`, comment).then(({ data }) => {
-        console.log(data);
-        this.comments = data;
-      });
-      // if (todoItem.title) this.$store.dispatch("createTodo", todoItem);
-      // this.todoTitle = "";
+      if (comment.content) {
+        http
+          .post(`/comments`, comment)
+          .then(({ data }) => {
+            console.log(data);
+            this.comments = data;
+          })
+          .then(() => {
+            // console.log(this);
+            // this.$emit("changeComments");
+            location.reload();
+            this.content = "";
+          });
+      }
     },
   },
 };

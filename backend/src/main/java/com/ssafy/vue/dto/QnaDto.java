@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel(value = "QnA(게시글정보)", description = "질문글번호, 제목, 내용, 작성자아이디, 작성일을 가진   Domain Class")
 public class QnaDto {
 	@ApiModelProperty(value = "질문글번호")
-	private int commentsno;
+	private int qnano;
 	@ApiModelProperty(value = "작성자아이디")
 	private String userid;
 	@ApiModelProperty(value = "제목")
@@ -17,11 +17,11 @@ public class QnaDto {
 	private int hit;
 	@ApiModelProperty(value = "작성일")
 	private String regtime;
-	public int getCommentsno() {
-		return commentsno;
+	public int getQnano() {
+		return qnano;
 	}
-	public void setCommentsno(int commentsno) {
-		this.commentsno = commentsno;
+	public void setQnano(int qnano) {
+		this.qnano = qnano;
 	}
 	public String getUserid() {
 		return userid;
@@ -55,7 +55,7 @@ public class QnaDto {
 	}
 	@Override
 	public String toString() {
-		return "QnaDto [commentsno=" + commentsno + ", userid=" + userid + ", subject=" + subject + ", content="
+		return "QnaDto [qnano=" + qnano + ", userid=" + userid + ", subject=" + subject + ", content="
 				+ content + ", hit=" + hit + ", regtime=" + regtime + "]";
 	}
 

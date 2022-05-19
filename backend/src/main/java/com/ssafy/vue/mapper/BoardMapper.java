@@ -12,4 +12,6 @@ public interface BoardMapper {
 	public int insertBoard(Board board);
 	public int updateBoard(Board board);
 	public int deleteBoard(int articleno);
+	//조회수 수정
+	public int updateHit(int articleno);
 }

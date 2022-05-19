@@ -2,6 +2,8 @@ import Vue from "vue";
 import Vuex from "vuex";
 import http from "@/api/http";
 
+// import axios from "axios";
+
 // import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex);
@@ -17,6 +19,8 @@ export default new Vuex.Store({
     aroundStores: [],
     checkedStore: null,
     checkedStoreList: [],
+    environs: [],
+    environ: null,
 
     todos: [
       // { title: '할 일1', completed: false },
@@ -128,6 +132,16 @@ export default new Vuex.Store({
     },
     /////////////////////////////// House end /////////////////////////////////////
 
+    /////////////////////////////// Environ start /////////////////////////////////////
+    SET_ENVIRON_LIST(state, environs) {
+      state.environs = environs;
+    },
+    SET_DETAIL_ENVIRON(state, environ) {
+      console.log("Mutations", environ);
+      state.environ = environ;
+    },
+    /////////////////////////////// Environ end /////////////////////////////////////
+
     //////////////////////////// Todo List start //////////////////////////////////
     CREATE_TODO(state, todoItem) {
       state.todos.push(todoItem);
@@ -180,7 +194,7 @@ export default new Vuex.Store({
       http
         .get(`/map/sido`)
         .then(({ data }) => {
-          // console.log(data);
+          console.log(data);
           commit("SET_SIDO_LIST", data);
         })
         .catch((error) => {
@@ -199,6 +213,7 @@ export default new Vuex.Store({
           console.log(error);
         });
     },
+
     getDong({ commit }, gugunCode) {
       const params = { gugun: gugunCode };
       http
@@ -207,12 +222,32 @@ export default new Vuex.Store({
           console.log(data);
           console.log(commit);
           commit("SET_DONG_LIST", data);
+
         })
         .catch((error) => {
           console.log(error);
         });
     },
 
+    
+      getEnvironList({ commit }, gugunCode) {
+      const params = { gugun: gugunCode };
+      http
+        .get(`/interestinfo/env/search`, { params })
+        .then(({ data }) => {
+          // console.log(commit, response);
+          console.log(commit, data);
+          commit("SET_ENVIRON_LIST", data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+      
+      
+      
+      
+      
     getAroundStoreList({ commit }, datas) {
       //const params = { sido: sidoCode, sigugun: gugunCode, dong: dongCode };
       // const ctprvnCd = datas.sidoCode;
@@ -268,6 +303,7 @@ export default new Vuex.Store({
     //       console.log(error);
     //     });
     // },
+
     getHouseList({ commit }, gugunCode) {
       // vue cli enviroment variables 검색
       //.env.local file 생성.
@@ -298,6 +334,13 @@ export default new Vuex.Store({
       commit("SET_DETAIL_HOUSE", house);
     },
     /////////////////////////////// House end /////////////////////////////////////
+
+    /////////////////////////////// Environ end /////////////////////////////////////
+
+    detailEnviron({ commit }, house) {
+      commit("SET_DETAIL_ENVIRON", house);
+    },
+    /////////////////////////////// Environ end /////////////////////////////////////
 
     //////////////////////////// Todo List start //////////////////////////////////
 

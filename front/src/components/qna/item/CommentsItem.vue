@@ -12,18 +12,19 @@
           {{ message }}
         </div>
       </b-col>
-      <!-- <b-col class="p-2"
-        ><b-button variant="danger" @click="deleteTodo">X</b-button></b-col
-      > -->
+      <b-col class="p-2"
+        ><b-button variant="danger" @click="deleteComment">X</b-button></b-col
+      >
     </b-row>
   </b-container>
 </template>
 
 <script>
+import http from "@/api/http";
 import moment from "moment";
 
 export default {
-  name: "CommentsListItem",
+  name: "CommentsItem",
   props: {
     commentsno: Number,
     userid: String,
@@ -43,6 +44,21 @@ export default {
   },
   created() {
     console.log(this.commentsno);
+  },
+  methods: {
+    deleteComment() {
+      http
+        .delete(`/comments/${this.commentsno}`)
+        .then(({ data }) => {
+          console.log(data);
+        })
+        .then(() => {
+          console.log(this);
+          // console.log("changeComments");
+          // this.$emit("changeComments");
+          location.reload();
+        });
+    },
   },
 };
 </script>

@@ -116,6 +116,39 @@ const routes = [
     ],
   },
   {
+    path: "/qna",
+    name: "qna",
+    component: () => import("@/views/QnaView.vue"),
+    redirect: "/qna/list",
+    children: [
+      {
+        path: "list",
+        name: "qnaList",
+        component: () => import("@/components/qna/QnaList.vue"),
+      },
+      {
+        path: "write",
+        name: "qnaRegister",
+        component: () => import("@/components/qna/QnaRegister.vue"),
+      },
+      {
+        path: "detail/:qnano",
+        name: "qnaDetail",
+        component: () => import("@/components/qna/QnaDetail.vue"),
+      },
+      {
+        path: "modify/:qnano",
+        name: "qnaModify",
+        component: () => import("@/components/qna/QnaModify.vue"),
+      },
+      {
+        path: "delete/:qnano",
+        name: "qnaDelete",
+        component: () => import("@/components/qna/QnaDelete.vue"),
+      },
+    ],
+  },
+  {
     path: "/instagram",
     name: "instagram",
     component: () => import("@/views/InstagramView.vue"),
@@ -124,6 +157,11 @@ const routes = [
     path: "/house",
     name: "house",
     component: () => import("@/views/HouseView.vue"),
+  },
+  {
+    path: "/environ",
+    name: "environ",
+    component: () => import("@/views/EnvironView.vue"),
   },
   {
     path: "/todo",

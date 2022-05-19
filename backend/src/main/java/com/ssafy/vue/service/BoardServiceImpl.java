@@ -41,4 +41,10 @@ public class BoardServiceImpl implements BoardService {
 	public boolean deleteBoard(int articleno) {
 		return boardMapper.deleteBoard(articleno) == 1;
 	}
+
+	@Override
+	public boolean updateHit(int articleno) {
+		// TODO Auto-generated method stub
+		return boardMapper.updateHit(articleno)==1;
+	}
 }
