@@ -4,11 +4,9 @@
       <b-col>
         <b-input-group prepend="댓글" class="mt-3">
           <b-form-input
-
             v-on:submit.native.prevent="onSubmit"
             v-model.trim="content"
             v-on:keydown.enter.prevent="registComment"
-
           ></b-form-input>
           <b-input-group-append>
             <b-button variant="outline-success" @click="registComment"

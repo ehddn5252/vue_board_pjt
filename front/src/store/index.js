@@ -222,15 +222,13 @@ export default new Vuex.Store({
           console.log(data);
           console.log(commit);
           commit("SET_DONG_LIST", data);
-
         })
         .catch((error) => {
           console.log(error);
         });
     },
 
-    
-      getEnvironList({ commit }, gugunCode) {
+    getEnvironList({ commit }, gugunCode) {
       const params = { gugun: gugunCode };
       http
         .get(`/interestinfo/env/search`, { params })
@@ -243,11 +241,7 @@ export default new Vuex.Store({
           console.log(error);
         });
     },
-      
-      
-      
-      
-      
+
     getAroundStoreList({ commit }, datas) {
       //const params = { sido: sidoCode, sigugun: gugunCode, dong: dongCode };
       // const ctprvnCd = datas.sidoCode;
