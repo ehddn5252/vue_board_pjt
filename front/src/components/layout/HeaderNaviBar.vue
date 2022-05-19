@@ -1,15 +1,26 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" id="header" class="fixed-top">
+    <b-navbar
+      toggleable="lg"
+      id="header"
+      :class="{
+        'fixed-top': true,
+        'header-scrolled': !view.topOfPage,
+        'shadow-lg': !view.topOfPage,
+      }"
+    >
       <b-navbar-brand href="#" class="container d-flex align-items-center">
-        <router-link to="/">
-          <img
-            src="@/assets/ssafy_logo.png"
-            class="d-inline-block align-middle"
-            width="100px"
-            alt="ssafy"
-          />
-        </router-link>
+        <h1 class="logo text-light">
+          <router-link to="/">
+            <span
+              >Happy<span
+                id="logo-a "
+                style="color: rgb(217, 219, 252); font-size: 26px"
+                >House</span
+              ></span
+            >
+          </router-link>
+        </h1>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -86,7 +97,36 @@
 <script>
 export default {
   name: "HeaderNaviBar",
+  data() {
+    return {
+      view: {
+        topOfPage: true,
+      },
+    };
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.pageYOffset > 0) {
+        if (this.view.topOfPage) this.view.topOfPage = false;
+      } else {
+        if (!this.view.topOfPage) this.view.topOfPage = true;
+      }
+    },
+  },
 };
 </script>
 
-<style></style>
+<style scoped>
+h1.logo * {
+  font-size: 24px;
+  text-shadow: rgba(0, 0, 0, 0.267) 1px 1px 1px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+}
+</style>
