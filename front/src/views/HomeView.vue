@@ -3,17 +3,27 @@
     <section id="hero">
       <div class="hero-container" data-aos="fade-up">
         <h1>
-          <span style="color: rgb(114, 139, 207)"> Welcome to </span>
-          <span class="log"
-            >Happy<span id="logo-a " style="color: rgb(217, 219, 252)"
-              >House</span
-            ></span
-          >
+          <span class="log">당신의 집을 찾아라</span>
         </h1>
         <h2></h2>
-        <a href="#services" class="btn-get-started scrollto"
-          ><i class="bx bx-chevrons-down"></i
-        ></a>
+
+        <v-container>
+          <v-row>
+            <v-col class="m-auto" cols="12" sm="6">
+              <v-row align-content="center" justify="center">
+                <v-text-field
+                  v-model="search"
+                  solo
+                  label="Solo"
+                  clearable
+                ></v-text-field>
+                <v-btn depressed color="#d9dea6 " class="white--text m-1">
+                  검색
+                </v-btn>
+              </v-row>
+            </v-col>
+          </v-row></v-container
+        >
       </div>
     </section>
     <!-- End Hero --><!-- p[	1` -->
@@ -33,7 +43,9 @@
               class="company-button col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box" data-aos="fade-up">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <div class="icon">
+                  <v-icon large color="green darken-2"> mdi-domain </v-icon>
+                </div>
                 <h4 class="title"><a href="/apart">주택 실거래가 조회</a></h4>
                 <p class="description">
                   원하는 지역을 선택하면 해당 지역의 주택 실거래가 정보를
@@ -47,7 +59,9 @@
               class="company-button col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon"><i class="bx bx-file"></i></div>
+                <div class="icon">
+                  <b-icon icon="icon file" aria-hidden="true"></b-icon>
+                </div>
                 <h4 class="title"><a href="/interest/list">관심지역조회</a></h4>
                 <p class="description">
                   관심 지역을 설정하면 그 지역의 정보를 조회할 수 있습니다.
@@ -95,7 +109,12 @@
           <div class="row no-gutters">
             <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch">
               <div class="count-box text-center">
-                <i class="bi bi-emoji-smile"></i>
+                <b-icon
+                  class="icon"
+                  icon="emoji-smile"
+                  aria-hidden="true"
+                ></b-icon>
+                <!-- <i class="bi bi-emoji-smile"></i> -->
                 <span
                   data-purecounter-start="0"
                   data-purecounter-end="232"
@@ -207,6 +226,11 @@
 <script>
 export default {
   name: "HomeView",
+  data() {
+    return {
+      search: "",
+    };
+  },
   props: {
     msg: String,
   },
@@ -979,7 +1003,7 @@ section {
   padding: 30px;
   width: 100%;
 }
-.counts .count-box i {
+.counts .count-box .icon {
   display: block;
   font-size: 44px;
   color: #67b0d1;

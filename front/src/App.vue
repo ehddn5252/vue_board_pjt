@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style>
+#app > .container {
+  position: relative;
+  top: 100px;
+}
 a {
   text-decoration: none;
 }
