@@ -25,4 +25,6 @@ public interface QnaMapper {
 	public int deleteQna(int qnano);
     // 페이지 이동 위한 것
 	public int getTotalCount(Map<String, String> map) throws Exception;
+	
+	public List<QnaDto> getMostHit();
 }
