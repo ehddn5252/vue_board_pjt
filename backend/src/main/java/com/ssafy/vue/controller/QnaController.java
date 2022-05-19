@@ -39,10 +39,10 @@ public class QnaController {
 	private QnaService qnaService;
 
     @ApiOperation(value = "해당 게시글의 정보를 반환한다.", response = List.class)
-	@GetMapping
-	public ResponseEntity<List<QnaDto>> selectQnaByName(Map<String, String> map) throws Exception {
+	@GetMapping("{qnano}")
+	public ResponseEntity<List<QnaDto>> selectQnaByName(@PathVariable int qnano) throws Exception {
 		logger.debug("retrieveQna - 호출");
-		return new ResponseEntity<List<QnaDto>>(qnaService.selectQnaByName(map), HttpStatus.OK);
+		return new ResponseEntity<List<QnaDto>>(qnaService.selectQnaByNo(qnano), HttpStatus.OK);
 	}
 
 //    @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = Qna.class)    
@@ -73,6 +73,15 @@ public class QnaController {
 		}
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
+    
+    @ApiOperation(value = "게시물을 보면 조회수가 올라간다.", response = String.class)
+    @PutMapping("/hit/{qnano}")
+    public ResponseEntity<String> updateHit(@PathVariable int qnano) {
+    	if (qnaService.updateHit(qnano)) {
+    		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+    	}
+    	return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+    }
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 삭제한다. 그리고 DB삭제 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
 	@DeleteMapping("{qnano}")
@@ -86,13 +95,17 @@ public class QnaController {
     
     @GetMapping("/list")
     public ResponseEntity<?> list(@RequestParam Map<String, String> map) throws Exception {
-       Map<String,Object> retMap = new HashMap<String,Object>(); 
+    	logger.debug("list - 호출");
+    	System.out.println(map.toString());
        String spp = map.get("spp"); // size per page (페이지당 글갯수)
-       retMap.put("spp", spp != null ? spp : "10");
+       map.put("spp", spp != null ? spp : "10");
        List<QnaDto> list = qnaService.selectQnaByName(map);
        PageNavigation pageNavigation = qnaService.makePageNavigation(map);
+       
+       Map<String,Object> retMap = new HashMap<String,Object>(); 
        retMap.put("qnalist", list);
        retMap.put("navigation", pageNavigation);
+//       System.out.println(list.get(0).toString());
        
        if (list != null && !list.isEmpty()) {
           return new ResponseEntity<Map>(retMap, HttpStatus.OK);

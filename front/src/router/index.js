@@ -104,6 +104,11 @@ const routes = [
     component: () => import("@/views/HouseView.vue"),
   },
   {
+    path: "/environ",
+    name: "environ",
+    component: () => import("@/views/EnvironView.vue"),
+  },
+  {
     path: "/todo",
     name: "todo",
     component: () => import("@/views/TodoView.vue"),

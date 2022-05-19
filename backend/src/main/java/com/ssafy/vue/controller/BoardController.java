@@ -40,6 +40,15 @@ public class BoardController {
 		logger.debug("retrieveBoard - 호출");
 		return new ResponseEntity<List<Board>>(boardService.retrieveBoard(), HttpStatus.OK);
 	}
+    
+    @ApiOperation(value = "게시물을 보면 조회수가 올라간다.", response = String.class)
+    @PutMapping("/hit/{qnano}")
+    public ResponseEntity<String> updateHit(@PathVariable int qnano) {
+    	if (boardService.updateHit(qnano)) {
+    		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+    	}
+    	return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+    }
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = Board.class)    
 	@GetMapping("{articleno}")

@@ -47,7 +47,10 @@
       </b-row>
       <b-row>
         <b-col>
-          <comments-list v-bind="{ qnano: qna.qnano }"></comments-list>
+          <comments-list
+            v-bind="{ qnano: qna.qnano }"
+            ref="CommentsList"
+          ></comments-list>
         </b-col>
       </b-row>
     </b-col>
@@ -70,6 +73,7 @@ export default {
   data() {
     return {
       qna: {},
+      renderComponent: true,
     };
   },
   computed: {
@@ -81,25 +85,12 @@ export default {
       console.log(`isQnaNo=${this.qna.qnano != null}`);
       return this.qna.qnano != null;
     },
-    // qnano() {
-    //   console.log(`qnano=${this.qna.qnano}`);
-    //   return this.qna.qnano;
-    // },
-  },
-  // watch: {
-  //   qna: function (newVal, oldVal) {
-  //     this.reversedMessage = newVal.split("").reverse().join("");
-  //   },
-  // },
-  mounted() {
-    console.log(this.qna.qnano);
   },
   created() {
-    http.get(`/qna/${this.$route.params.qnano}`).then(({ data }) => {
-      console.log("created전**");
-      console.log(data[0].qnano);
-      console.log("created후**");
-      this.qna = data[0];
+    http.put(`/qna/hit/${this.$route.params.qnano}`).then(() => {
+      http.get(`/qna/${this.$route.params.qnano}`).then(({ data }) => {
+        this.qna = data[0];
+      });
     });
   },
   methods: {

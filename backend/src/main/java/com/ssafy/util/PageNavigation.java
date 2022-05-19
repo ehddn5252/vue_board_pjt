@@ -88,20 +88,20 @@ public class PageNavigation {
 		
 		StringBuilder buffer = new StringBuilder();
 		buffer.append("		<ul class=\"pagination\"> \n");
-		buffer.append("			<li class=\"page-item\" data-pg=\"1\"> \n");
-		buffer.append("				<a href=\"#\" class=\"page-link\">최신</a> \n");
+		buffer.append("			<li class=\"page-item\"> \n");
+		buffer.append("				<a href=\"#\" class=\"page-link\" name=\"1\">최신</a> \n");
 		buffer.append("			</li> \n");
-		buffer.append("			<li class=\"page-item\" data-pg=\"" + (this.startRange ? 1 : (startPage - 1)) + "\"> \n");
-		buffer.append("				<a href=\"#\" class=\"page-link\">이전</a> \n");
+		buffer.append("			<li class=\"page-item\"> \n");
+		buffer.append("				<a href=\"#\" class=\"page-link\" name=\"" + (this.startRange ? 1 : (startPage - 1)) + "\">이전</a> \n");
 		buffer.append("			</li> \n");
 		for(int i=startPage;i<=endPage;i++) {
-			buffer.append("			<li class=\"" + (currentPage == i ? "page-item active" : "page-item") + "\" data-pg=\"" + i + "\"><a href=\"#\" class=\"page-link\">" + i + "</a></li> \n");
+			buffer.append("			<li class=\"" + (currentPage == i ? "page-item active" : "page-item") + "\"><a href=\"#\" class=\"page-link\" + name=\"" + i + "\">" + i + "</a></li> \n");
 		}
-		buffer.append("			<li class=\"page-item\" data-pg=\"" + (this.endRange ? endPage : (endPage + 1)) + "\"> \n");
-		buffer.append("				<a href=\"#\" class=\"page-link\">다음</a> \n");
+		buffer.append("			<li class=\"page-item\"> \n");
+		buffer.append("				<a href=\"#\" class=\"page-link\" name=\"" + (this.endRange ? endPage : (endPage + 1)) + "\">다음</a> \n");
 		buffer.append("			</li> \n");
-		buffer.append("			<li class=\"page-item\" data-pg=\"" + totalPageCount + "\"> \n");
-		buffer.append("				<a href=\"#\" class=\"page-link\">마지막</a> \n");
+		buffer.append("			<li class=\"page-item\"> \n");
+		buffer.append("				<a href=\"#\" class=\"page-link\" name=\"" + totalPageCount + "\">마지막</a> \n");
 		buffer.append("			</li> \n");
 		buffer.append("		</ul> \n");
 		this.navigator = buffer.toString();

@@ -1,6 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import http from "@/api/http";
+// import axios from "axios";
+
 // import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex);
@@ -11,6 +13,8 @@ export default new Vuex.Store({
     guguns: [{ value: null, text: "선택하세요" }],
     houses: [],
     house: null,
+    environs: [],
+    environ: null,
     todos: [
       // { title: '할 일1', completed: false },
       // { title: '할 일2', completed: false },
@@ -58,6 +62,16 @@ export default new Vuex.Store({
     },
     /////////////////////////////// House end /////////////////////////////////////
 
+    /////////////////////////////// Environ start /////////////////////////////////////
+    SET_ENVIRON_LIST(state, environs) {
+      state.environs = environs;
+    },
+    SET_DETAIL_ENVIRON(state, environ) {
+      console.log("Mutations", environ);
+      state.environ = environ;
+    },
+    /////////////////////////////// Environ end /////////////////////////////////////
+
     //////////////////////////// Todo List start //////////////////////////////////
     CREATE_TODO(state, todoItem) {
       state.todos.push(todoItem);
@@ -85,7 +99,7 @@ export default new Vuex.Store({
       http
         .get(`/map/sido`)
         .then(({ data }) => {
-          // console.log(data);
+          console.log(data);
           commit("SET_SIDO_LIST", data);
         })
         .catch((error) => {
@@ -99,6 +113,19 @@ export default new Vuex.Store({
         .then(({ data }) => {
           // console.log(commit, response);
           commit("SET_GUGUN_LIST", data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    getEnvironList({ commit }, gugunCode) {
+      const params = { gugun: gugunCode };
+      http
+        .get(`/interestinfo/env/search`, { params })
+        .then(({ data }) => {
+          // console.log(commit, response);
+          console.log(commit, data);
+          commit("SET_ENVIRON_LIST", data);
         })
         .catch((error) => {
           console.log(error);
@@ -134,6 +161,13 @@ export default new Vuex.Store({
       commit("SET_DETAIL_HOUSE", house);
     },
     /////////////////////////////// House end /////////////////////////////////////
+
+    /////////////////////////////// Environ end /////////////////////////////////////
+
+    detailEnviron({ commit }, house) {
+      commit("SET_DETAIL_ENVIRON", house);
+    },
+    /////////////////////////////// Environ end /////////////////////////////////////
 
     //////////////////////////// Todo List start //////////////////////////////////
 

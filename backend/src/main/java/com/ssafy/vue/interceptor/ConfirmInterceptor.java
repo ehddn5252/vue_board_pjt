@@ -13,16 +13,17 @@ import com.ssafy.vue.dto.UserDto;
 @SuppressWarnings("deprecation")
 public class ConfirmInterceptor extends HandlerInterceptorAdapter {
 
-	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
-			throws Exception {
-		HttpSession session = request.getSession();
-		UserDto userDto = (UserDto) session.getAttribute("userInfo");
-		if(userDto == null) {
-			response.sendRedirect(request.getContextPath() + "/");
-			return false;
-		}
-		return true;
-	}
+//	@Override
+//	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+//			throws Exception {
+//		HttpSession session = request.getSession();
+//		UserDto userDto = (UserDto) session.getAttribute("userInfo");
+//		if(userDto == null) {
+//			System.out.println("들어감"+request.getContextPath());
+//			response.sendRedirect(request.getContextPath() + "/");
+//			return false;
+//		}
+//		return true;
+//	}
 	
 }
