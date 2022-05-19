@@ -16,15 +16,12 @@
 </template>
 
 <script>
-// import { mapActions } from "vuex";
-
 export default {
   name: "TodoListItem",
   props: {
     todo: Object,
   },
   methods: {
-    // ... mapActions:["",""],
     deleteTodo() {
       console.log("deleteTodo Call");
       this.$store.dispatch("deleteTodo", this.todo);
