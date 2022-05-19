@@ -2,7 +2,7 @@
   <b-container v-if="aroundStore" class="bv-example-row">
     <b-row>
       <b-col
-        ><h3>{{ aroundStore.storeName }}</h3></b-col
+        ><h3>{{ aroundStore.bizesNm }}</h3></b-col
       >
     </b-row>
     <b-row class="mb-2 mt-1">
@@ -13,7 +13,7 @@
     <b-row>
       <b-col>
         <b-alert show variant="warning"
-          >주소 : {{ aroundStore.address }}</b-alert
+          >주소 : {{ aroundStore.rdnmAdr }}</b-alert
         >
       </b-col>
     </b-row>
