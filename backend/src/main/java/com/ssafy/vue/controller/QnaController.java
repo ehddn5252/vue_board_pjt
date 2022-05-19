@@ -103,10 +103,20 @@ public class QnaController {
        PageNavigation pageNavigation = qnaService.makePageNavigation(map);
        
        Map<String,Object> retMap = new HashMap<String,Object>(); 
-       retMap.put("qnalist", list);
-       retMap.put("navigation", pageNavigation);
 //       System.out.println(list.get(0).toString());
-       
+       System.out.println("retMap");
+       System.out.println(retMap);
+       if (list != null && !list.isEmpty()) {
+          return new ResponseEntity<Map>(retMap, HttpStatus.OK);
+       } else {
+          return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
+       }
+    }
+    
+    @GetMapping("/list/mostpopular")
+    public ResponseEntity<?> popularList() throws Exception {
+    Map<String,Object> retMap = new HashMap<String,Object>();
+    List<QnaDto> list = qnaService.getMostHit();
        if (list != null && !list.isEmpty()) {
           return new ResponseEntity<Map>(retMap, HttpStatus.OK);
        } else {

@@ -21,6 +21,10 @@ public interface QnaService {
 	// 게시글 삭제
 	public boolean deleteQna(int qnano);
 	
+	public List<QnaDto> getMostHit();	
+
+
+	
 	
 	// 네비게이션
 	PageNavigation makePageNavigation(Map<String, String> map) throws Exception;
