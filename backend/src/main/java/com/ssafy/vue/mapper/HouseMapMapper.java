@@ -13,6 +13,10 @@ public interface HouseMapMapper {
 	List<HouseInfoDto> getDongInGugun(String gugun) throws SQLException;
 	List<HouseInfoDto> getAptInDong(String dong) throws SQLException;
 	
+
+	//2022.05.20 추가
+	List<HouseInfoDto> getAptInDong2(String dongCode) throws SQLException;
+	
 	/////  ============2022.05.18 12:42 add
 	List<HouseInfoDto> getAptInName(String aptName, String dong) throws SQLException;
 	

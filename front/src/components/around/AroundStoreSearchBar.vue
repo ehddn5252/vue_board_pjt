@@ -65,9 +65,9 @@ export default {
     // sidoList() {
     //   this.getSido();
     // },
-    getSidoAround() {
-      if (this.sidoCode) this.getGugun(this.sidoCode);
-    },
+    // getSidoAround() {
+    //   if (this.sidoCode) this.getGugun(this.sidoCode);
+    // },
     gugunList() {
       this.CLEAR_GUGUN_LIST();
       this.gugunCode = null;
