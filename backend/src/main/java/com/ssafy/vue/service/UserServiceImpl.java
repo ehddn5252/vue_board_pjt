@@ -21,13 +21,13 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public boolean register(UserDto userDto) throws Exception {
-		return userMapper.register(userDto)==1;
+	public void register(UserDto userDto) throws Exception {
+		userMapper.register(userDto);
 	}
 
 	@Override
-	public UserDto login(Map<String, String> map) throws Exception {
-		return userMapper.login(map);
+	public UserDto login(UserDto userDto) throws Exception {
+		return userMapper.login(userDto);
 	}
 
 	@Override
@@ -41,10 +41,12 @@ public class UserServiceImpl implements UserService {
 		userMapper.deleteUser(id);
 	}
 
-	/*
-	 * @Override public UserDto searchById(String id) throws Exception { return
-	 * userMapper.searchById(id); }
-	 */
+	
+	 @Override 
+	 public UserDto searchById(String id) throws Exception { 
+		 return userMapper.searchById(id); 
+	 }
+	 
 	
 	@Override
 	public String searchPwdById(String id) throws Exception {

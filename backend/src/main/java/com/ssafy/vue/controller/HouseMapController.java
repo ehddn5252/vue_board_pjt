@@ -45,17 +45,8 @@ public class HouseMapController {
 	}
 	
 	@GetMapping("/apt")
-	public ResponseEntity<List<HouseInfoDto>> apt(@RequestParam("dongName") String dongName) throws Exception {
-		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getAptInDong(dongName), HttpStatus.OK);
-	}
-	
-	@GetMapping("/apt2")
-	public ResponseEntity<List<HouseInfoDto>> apt2(@RequestParam("sidoCode") String sidoCode, @RequestParam("gugunCode") String gugunCode, @RequestParam("dongCode") String dongCode) throws Exception {
-		System.out.println("System.out.println(sidoCode);");
-		System.out.println(sidoCode);
-		System.out.println(gugunCode);
-		System.out.println(dongCode);
-		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getAptInDong2(dongCode), HttpStatus.OK);
+	public ResponseEntity<List<HouseInfoDto>> apt(@RequestParam("dong") String dong) throws Exception {
+		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getAptInDong(dong), HttpStatus.OK);
 	}
 
 	// 아파트 이름으로 찾기

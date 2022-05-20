@@ -1,6 +1,8 @@
 package com.ssafy.vue.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,4 +49,22 @@ public class BoardServiceImpl implements BoardService {
 		// TODO Auto-generated method stub
 		return boardMapper.updateHit(articleno)==1;
 	}
+
+	@Override
+	public int likecheck(Map<String, Object> map) {
+		return boardMapper.likecheck(map);
+	}
+
+	@Override
+	public int likeBoard(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return boardMapper.likeBoard(map);
+	}
+
+	@Override
+	public int unlikeBoard(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return boardMapper.unlikeBoard(map);
+	}
+
 }

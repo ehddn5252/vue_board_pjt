@@ -40,11 +40,6 @@ public class HouseMapServiceImpl implements HouseMapService {
 		return houseMapMapper.getAptInDong(dong);
 	}
 
-	@Override
-	public List<HouseInfoDto> getAptInDong2(String dongCode) throws Exception {
-		return houseMapMapper.getAptInDong2(dongCode);
-	}
-
 	
 	
 	//======================================= 2022.05.18 11:52 추가된 부분
@@ -104,11 +99,11 @@ public class HouseMapServiceImpl implements HouseMapService {
 		for(int i=0;i<h.size();++i) {
 			TmpDto tmp_dto = new TmpDto();
 			tmp_dto.aptCode= h.get(i).getAptCode(); 
-			tmp_dto.apartmentName= h.get(i).getApartmentName();
+			tmp_dto.aptName = h.get(i).getApartmentName();
 			tmp_dto.buildYear = h.get(i).getBuildYear(); 
 			tmp_dto.recentPrice = h.get(i).getRecentPrice(); 
 			tmp_dto.sidoName= h.get(i).getSidoName();
-			tmp_dto.dong = h.get(i).getDong();
+			tmp_dto.dongName = h.get(i).getDong();
 			tmp_dto.gugunName = h.get(i).getGugunName();
 			tmp_dto.jibun = h.get(i).getJibun();
 			tmp_dto.lat = h.get(i).getLat();
@@ -140,10 +135,10 @@ public class HouseMapServiceImpl implements HouseMapService {
 	static class TmpDto implements Comparable<TmpDto>{
 		
 		long aptCode;
-		String apartmentName;
+		String aptName;
 		String sidoName;
 		String gugunName;
-		String dong;
+		String dongName;
 		String jibun;
 		String recentPrice;
 		int buildYear;
@@ -159,10 +154,10 @@ public class HouseMapServiceImpl implements HouseMapService {
 		public HouseInfoDto convertTypeToHouseInfo() {
 			HouseInfoDto houseInfoDto = new HouseInfoDto();
 			houseInfoDto.setAptCode(aptCode);
-			houseInfoDto.setApartmentName(apartmentName);
+			houseInfoDto.setApartmentName(aptName);
 			houseInfoDto.setSidoName(sidoName);
 			houseInfoDto.setGugunName(gugunName);
-			houseInfoDto.setDong(dong);
+			houseInfoDto.setDong(dongName);
 			houseInfoDto.setJibun(jibun);
 			houseInfoDto.setRecentPrice(recentPrice);
 			houseInfoDto.setBuildYear(buildYear);

@@ -1,10 +1,10 @@
 package com.ssafy.vue.controller;
 
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.json.JSONObject;
@@ -13,9 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,13 +23,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.ssafy.vue.service.UserService;
 import com.ssafy.vue.dto.UserDto;
+import com.ssafy.vue.service.JwtServiceImpl;
+import com.ssafy.vue.service.UserService;
 
-@Controller
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+
+@Api("MemberController V1")
+@RestController
 @RequestMapping("/user")
-@CrossOrigin("*")
 public class userMain  {
 	
 	private static final Logger logger = LoggerFactory.getLogger(userMain.class);
@@ -39,38 +43,19 @@ public class userMain  {
 	private static final String FAIL = "fail";
 	
 	@Autowired
+	private JwtServiceImpl jwtService;
+	
+	@Autowired
 	private UserService userService;
-
-	@GetMapping("/register")
-	public String register() {
-		return "register";
-	}
 	
 	@PostMapping("/register")
-	public ResponseEntity<String> register(@RequestBody UserDto userDto) throws Exception {
-		System.out.println("is in register");
-		logger.debug("writeBoard - 호출");
+	public String register(UserDto userDto, Model model) throws Exception {
 		userDto.setManager("user");
 		userDto.setRegistDate(LocalDate.now().toString());
 		logger.debug("userDto info : {}", userDto);
-
-		if (userService.register(userDto)) {
-			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
-		}
-		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+		userService.register(userDto);
+		return "redirect:/";
 	}
-
-	
-	
-//	@PostMapping("/register")
-//	public String register(UserDto userDto, Model model) throws Exception {
-//		System.out.println("is in register");
-//		userDto.setManager("user");
-//		userDto.setRegistDate(LocalDate.now().toString());
-//		logger.debug("userDto info : {}", userDto);
-//		userService.register(userDto);
-//		return "redirect:/";
-//	}
 	
 	@GetMapping("/idcheck")
 	public @ResponseBody String idCheck(@RequestParam("ckid") String checkId) throws Exception {
@@ -81,63 +66,94 @@ public class userMain  {
 	}
 	
 	
-	@PostMapping("/login")
-	public @ResponseBody String login(@RequestParam Map<String, String> map, Model model, HttpSession session,
-			HttpServletResponse response) throws Exception {
-		logger.debug("map : {}", map);
-		UserDto UserDto = userService.login(map);
-		if (UserDto != null) {
-			session.setAttribute("userInfo", UserDto);
+//	@ApiOperation(value = "로그인", notes = "Access-token과 로그인 결과 메세지를 반환한다.", response = Map.class)
+//	@PostMapping("/login")
+//	public ResponseEntity<Map<String, Object>> login(
+//			@RequestParam @ApiParam(value = "로그인 시 필요한 회원정보(아이디, 비밀번호).", required = true) UserDto userDto){
+//		Map<String, Object> resultMap = new HashMap<>();
+//		HttpStatus status = null;
+//		
+//		try {
+//			UserDto loginUser = userService.login(userDto);
+//			if (loginUser != null) {
+//				String token = jwtService.create("userid", loginUser.getUserId(), "access-token");// key, data, subject
+//				logger.debug("로그인 토큰정보 : {}", token);
+//				resultMap.put("access-token", token);
+//				resultMap.put("message", SUCCESS);
+//				status = HttpStatus.ACCEPTED;
+//			} else {
+//				resultMap.put("message", FAIL);
+//				status = HttpStatus.ACCEPTED;
+//			}
+//		} catch (Exception e) {
+//			logger.error("로그인 실패 : {}", e);
+//			resultMap.put("message", e.getMessage());
+//			status = HttpStatus.INTERNAL_SERVER_ERROR;
+//		}
+//		return new ResponseEntity<Map<String, Object>>(resultMap, status);
+//	}
+	
 
-			Cookie cookie = new Cookie("ssafy_id", map.get("userId"));
-			cookie.setPath("/");
-			if ("true".equals(map.get("idsave"))) {
-				cookie.setMaxAge(60 * 60 * 24 * 365 * 40);
-			} else {
-				cookie.setMaxAge(0);
+	@ApiOperation(value = "회원인증", notes = "회원 정보를 담은 Token을 반환한다.", response = Map.class)
+	@GetMapping("/info/{userid}")
+	public ResponseEntity<Map<String, Object>> getInfo(
+			@PathVariable("userid") @ApiParam(value = "인증할 회원의 아이디.", required = true) String userid,
+			HttpServletRequest request) {
+//		logger.debug("userid : {} ", userid);
+		Map<String, Object> resultMap = new HashMap<>();
+		HttpStatus status = HttpStatus.ACCEPTED;
+		if (jwtService.isUsable(request.getHeader("access-token"))) {
+			logger.info("사용 가능한 토큰!!!");
+			try {
+//				로그인 사용자 정보.
+				UserDto userDto = userService.searchById(userid);
+				resultMap.put("userInfo", userDto);
+				resultMap.put("message", SUCCESS);
+				status = HttpStatus.ACCEPTED;
+			} catch (Exception e) {
+				logger.error("정보조회 실패 : {}", e);
+				resultMap.put("message", e.getMessage());
+				status = HttpStatus.INTERNAL_SERVER_ERROR;
 			}
-			response.addCookie(cookie);
-			return "1";
 		} else {
-			model.addAttribute("msg", "아이디 또는 비밀번호 확인 후 다시 로그인하세요!");
-			return "0";
+			logger.error("사용 불가능 토큰!!!");
+			resultMap.put("message", FAIL);
+			status = HttpStatus.ACCEPTED;
 		}
+		return new ResponseEntity<Map<String, Object>>(resultMap, status);
 	}
 	
-	// 로그아웃하면, index.jsp로 이동
-	@GetMapping("/logout")
-	public String logout(HttpSession session) {
-		session.invalidate();
-		return "redirect:/";
+	@ApiOperation(value = "로그인", notes = "Access-token과 로그인 결과 메세지를 반환한다.", response = Map.class)
+	@PostMapping("/login")
+	public ResponseEntity<Map<String, Object>> login(
+			@RequestBody @ApiParam(value = "로그인 시 필요한 회원정보(아이디, 비밀번호).", required = true) UserDto userDto) {
+		Map<String, Object> resultMap = new HashMap<>();
+		HttpStatus status = null;
+		try {
+			UserDto loginUser = userService.login(userDto);
+			if (loginUser != null) {
+				String token = jwtService.create("userid", loginUser.getUserId(), "access-token");// key, data, subject
+				logger.debug("로그인 토큰정보 : {}", token);
+				resultMap.put("access-token", token);
+				resultMap.put("message", SUCCESS);
+				status = HttpStatus.ACCEPTED;
+			} else {
+				resultMap.put("message", FAIL);
+				status = HttpStatus.ACCEPTED;
+			}
+		} catch (Exception e) {
+			logger.error("로그인 실패 : {}", e);
+			resultMap.put("message", e.getMessage());
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
+		}
+		return new ResponseEntity<Map<String, Object>>(resultMap, status);
 	}
-	
-	// 마이페이지로 이동
-	@GetMapping("/userinfo")
-	public String userinfo() throws Exception {
-//		ModelAndView mav = new ModelAndView();
-//		UserDto UserDto = userService.searchById(userId);
-//		mav.addObject("userDto", UserDto);
-//		mav.setViewName();
-		return "myPage";
-	}
+
 	
 	
-	// 비밀번호 찾기로 이동
-	@GetMapping("/findpwd")
-	public String findpwd() {
-		return "findPwd";
-	}
-	
-	
-	// 비밀번호 수정으로 이동
-	@GetMapping("/modifypwd")
-	public String modifypwd() {
-		return "modifyPwd";
-	}
-	
-	// 마이페이지로 이동
+	// 회원 삭제
 	@DeleteMapping(value = "/delete/{userId}")
-	public @ResponseBody String userDelete(@PathVariable String userId, HttpSession session) throws Exception {
+	public String userDelete(@PathVariable String userId, HttpSession session) throws Exception {
 		logger.debug("[delete] userId info : {}", userId);
 		userService.deleteUser(userId);
 		session.invalidate();
@@ -148,7 +164,7 @@ public class userMain  {
 	}
 	
 	@PutMapping(value = "/modify")
-	public @ResponseBody String userModify(@RequestBody UserDto userDto, HttpSession session) throws Exception {
+	public String userModify(@RequestBody UserDto userDto, HttpSession session) throws Exception {
 		System.out.println("수정");
 		logger.debug("[modify] userDto info : {}", userDto.toString());
 		userService.updateUser(userDto);
@@ -164,7 +180,7 @@ public class userMain  {
 	}
 	
 	@PostMapping(value = "/findpwd/{userId}")
-	public @ResponseBody String searchPwdById(@PathVariable String userId) throws Exception {
+	public String searchPwdById(@PathVariable String userId) throws Exception {
 		logger.debug("[delete] userId info : {}", userId);
 		String userPwd=userService.searchPwdById(userId);
 		JSONObject json = new JSONObject();
@@ -175,13 +191,6 @@ public class userMain  {
 		}
 		return json.toString();
 	}
-	
-	
-	
-	// 알고리즘 프로젝트 추가 
-	@GetMapping("/sj")
-	public String sj() throws Exception {
-		return "apart_sj";
-	}
+
 
 }

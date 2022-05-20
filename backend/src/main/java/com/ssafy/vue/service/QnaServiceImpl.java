@@ -94,9 +94,4 @@ public class QnaServiceImpl implements QnaService{
 		// TODO Auto-generated method stub
 		return qnaMapper.updateHit(qnano)==1;
 	}
-
-	@Override
-	public List<QnaDto> getMostHit() {
-		return qnaMapper.getMostHit();
-	}
 }

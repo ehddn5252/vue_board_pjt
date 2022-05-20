@@ -31,72 +31,72 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/qna")
 public class QnaController {
 
-   private static final Logger logger = LoggerFactory.getLogger(QnaController.class);
-   private static final String SUCCESS = "success";
-   private static final String FAIL = "fail";
+	private static final Logger logger = LoggerFactory.getLogger(QnaController.class);
+	private static final String SUCCESS = "success";
+	private static final String FAIL = "fail";
 
-   @Autowired
-   private QnaService qnaService;
+	@Autowired
+	private QnaService qnaService;
 
     @ApiOperation(value = "해당 게시글의 정보를 반환한다.", response = List.class)
-   @GetMapping("{qnano}")
-   public ResponseEntity<List<QnaDto>> selectQnaByName(@PathVariable int qnano) throws Exception {
-      logger.debug("retrieveQna - 호출");
-      return new ResponseEntity<List<QnaDto>>(qnaService.selectQnaByNo(qnano), HttpStatus.OK);
-   }
+	@GetMapping("{qnano}")
+	public ResponseEntity<List<QnaDto>> selectQnaByName(@PathVariable int qnano) throws Exception {
+		logger.debug("retrieveQna - 호출");
+		return new ResponseEntity<List<QnaDto>>(qnaService.selectQnaByNo(qnano), HttpStatus.OK);
+	}
 
 //    @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = Qna.class)    
-//   @GetMapping("{articleno}")
-//   public ResponseEntity<Qna> detailQna(@PathVariable int articleno) {
-//      logger.debug("detailQna - 호출");
-//      return new ResponseEntity<Qna>(qnaService.detailQna(articleno), HttpStatus.OK);
-//   }
+//	@GetMapping("{articleno}")
+//	public ResponseEntity<Qna> detailQna(@PathVariable int articleno) {
+//		logger.debug("detailQna - 호출");
+//		return new ResponseEntity<Qna>(qnaService.detailQna(articleno), HttpStatus.OK);
+//	}
 
     @ApiOperation(value = "새로운 게시글 정보를 입력한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-   @PostMapping
-   public ResponseEntity<String> insertQna(@RequestBody QnaDto qna) {
-      logger.debug("insertQna - 호출");
-      if (qnaService.insertQna(qna)) {
-         return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
-      }
-      return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
-   }
+	@PostMapping
+	public ResponseEntity<String> insertQna(@RequestBody QnaDto qna) {
+		logger.debug("insertQna - 호출");
+		if (qnaService.insertQna(qna)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+	}
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 수정한다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-   @PutMapping("{qnano}")
-   public ResponseEntity<String> updateQna(@RequestBody QnaDto qna) {
-      logger.debug("updateQna - 호출");
-      logger.debug("" + qna);
-      
-      if (qnaService.updateQna(qna)) {
-         return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
-      }
-      return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
-   }
+	@PutMapping("{qnano}")
+	public ResponseEntity<String> updateQna(@RequestBody QnaDto qna) {
+		logger.debug("updateQna - 호출");
+		logger.debug("" + qna);
+		
+		if (qnaService.updateQna(qna)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+	}
     
     @ApiOperation(value = "게시물을 보면 조회수가 올라간다.", response = String.class)
     @PutMapping("/hit/{qnano}")
     public ResponseEntity<String> updateHit(@PathVariable int qnano) {
-       if (qnaService.updateHit(qnano)) {
-          return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
-       }
-       return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+    	if (qnaService.updateHit(qnano)) {
+    		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+    	}
+    	return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
     }
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 삭제한다. 그리고 DB삭제 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-   @DeleteMapping("{qnano}")
-   public ResponseEntity<String> deleteQna(@PathVariable int qnano) {
-      logger.debug("deleteQna - 호출");
-      if (qnaService.deleteQna(qnano)) {
-         return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
-      }
-      return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
-   }
+	@DeleteMapping("{qnano}")
+	public ResponseEntity<String> deleteQna(@PathVariable int qnano) {
+		logger.debug("deleteQna - 호출");
+		if (qnaService.deleteQna(qnano)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+	}
     
     @GetMapping("/list")
     public ResponseEntity<?> list(@RequestParam Map<String, String> map) throws Exception {
-       logger.debug("list - 호출");
-       System.out.println(map.toString());
+    	logger.debug("list - 호출");
+    	System.out.println(map.toString());
        String spp = map.get("spp"); // size per page (페이지당 글갯수)
        map.put("spp", spp != null ? spp : "10");
        List<QnaDto> list = qnaService.selectQnaByName(map);
@@ -113,16 +113,5 @@ public class QnaController {
           return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
        }
     }
-
-    @GetMapping("/list/mostpopular")
-    public ResponseEntity<?> popularList() throws Exception {
-    Map<String,Object> retMap = new HashMap<String,Object>();
-    List<QnaDto> list = qnaService.getMostHit();
-       if (list != null && !list.isEmpty()) {
-          return new ResponseEntity<Map>(retMap, HttpStatus.OK);
-       } else {
-          return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
-       }
-    }
-
+    
 }
