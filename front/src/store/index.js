@@ -87,7 +87,7 @@ export default new Vuex.Store({
     },
     SET_DONG_LIST(state, dongs) {
       dongs.forEach((dong) => {
-        state.dongs.push({ value: dong.dongCode, text: dong.dongName });
+        state.dongs.push({ value: dong.dongCode, text: dong.dong });
       });
     },
 
