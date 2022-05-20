@@ -15,8 +15,12 @@ public class Board {
 	private String content;
 	@ApiModelProperty(value = "조회수")
 	private int hit;
+	@ApiModelProperty(value = "추천수")
+	private int likeNum;
 	@ApiModelProperty(value = "작성일")
 	private String regtime;
+	@ApiModelProperty(value = "사용자가 좋아요를 눌렀는지 유무")
+	private int isLike;
 
 	public int getArticleno() {
 		return articleno;
@@ -57,6 +61,14 @@ public class Board {
 	public void setHit(int hit) {
 		this.hit = hit;
 	}
+	
+	public int getLikeNum() {
+		return likeNum;
+	}
+	
+	public void setLikeNum(int likeNum) {
+		this.likeNum = likeNum;
+	}
 
 	public String getRegtime() {
 		return regtime;
@@ -64,6 +76,14 @@ public class Board {
 
 	public void setRegtime(String regtime) {
 		this.regtime = regtime;
+	}
+	
+	public int getIsLike() {
+		return isLike;
+	}
+	
+	public void setIsLike(int isLike) {
+		this.isLike = isLike;
 	}
 
 	public Board(int articleno, String userid, String subject, String content, int hit, String regtime) {
