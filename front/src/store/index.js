@@ -273,7 +273,7 @@ export default new Vuex.Store({
         .get(SERVICE_URL, { params })
         .then(({ data }) => {
           commit("SET_AROUND_STORE_LIST", data.body.items);
-          commit("SET_AROUND_STORE_LIST", data.body.items);
+          //commit("SET_AROUND_STORE_LIST", data.body.items);
         })
         .catch((error) => {
           console.log(error);
