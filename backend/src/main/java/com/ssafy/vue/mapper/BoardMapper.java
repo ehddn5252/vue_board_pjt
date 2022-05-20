@@ -1,6 +1,7 @@
 package com.ssafy.vue.mapper;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
@@ -14,4 +15,7 @@ public interface BoardMapper {
 	public int deleteBoard(int articleno);
 	//조회수 수정
 	public int updateHit(int articleno);
+	public int likecheck(Map<String, Object> map);
+	public int likeBoard(Map<String, Object> map);
+	public int unlikeBoard(Map<String, Object> map);
 }

@@ -1,6 +1,8 @@
 package com.ssafy.vue.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,21 +44,56 @@ public class BoardController {
 	}
     
     @ApiOperation(value = "게시물을 보면 조회수가 올라간다.", response = String.class)
-    @PutMapping("/hit/{qnano}")
-    public ResponseEntity<String> updateHit(@PathVariable int qnano) {
-    	if (boardService.updateHit(qnano)) {
+    @PutMapping("/hit/{articleno}")
+    public ResponseEntity<String> updateHit(@PathVariable int articleno) {
+    	if (boardService.updateHit(articleno)) {
     		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
     	}
     	return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
     }
+    
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = Board.class)    
-	@GetMapping("{articleno}")
-	public ResponseEntity<Board> detailBoard(@PathVariable int articleno) {
+	@GetMapping("{articleno}/{userId}")
+	public ResponseEntity<Board> detailBoard(@PathVariable int articleno, @PathVariable String userId) {
 		logger.debug("detailBoard - 호출");
-		return new ResponseEntity<Board>(boardService.detailBoard(articleno), HttpStatus.OK);
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("articleno", articleno);
+		map.put("userId", userId);
+		
+		Board result = boardService.detailBoard(articleno);
+		if (boardService.likecheck(map)!=0) {
+			result.setIsLike(1);
+		} else {
+			result.setIsLike(0);
+		}
+		return new ResponseEntity<Board>(result, HttpStatus.OK);
 	}
 
+    @ApiOperation(value = "좋아요 눌리면 좋아요 DB 갱신", response = String.class)
+    @PutMapping("like/{articleno}/{userId}")
+    public ResponseEntity<String> likeBoard(@PathVariable int articleno, @PathVariable String userId) {
+    	Map<String, Object> map = new HashMap<String, Object>();
+    	map.put("articleno", articleno);
+    	map.put("userId", userId);
+    	logger.debug("likeBoard - 호출");
+    	if (boardService.likeBoard(map)!=0) {
+    		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+    	}
+    	return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+    }
+    @ApiOperation(value = "좋아요 끄면 좋아요 DB 삭제", response = String.class)
+    @PutMapping("unlike/{articleno}/{userId}")
+    public ResponseEntity<String> unlikeBoard(@PathVariable int articleno, @PathVariable String userId) {
+    	logger.debug("unlikeBoard - 호출");
+    	Map<String, Object> map = new HashMap<String, Object>();
+    	map.put("articleno", articleno);
+    	map.put("userId", userId);
+    	if (boardService.unlikeBoard(map)!=0) {
+    		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+    	}
+    	return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+    }
     @ApiOperation(value = "새로운 게시글 정보를 입력한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
 	@PostMapping
 	public ResponseEntity<String> writeBoard(@RequestBody Board board) {
