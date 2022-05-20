@@ -52,7 +52,7 @@ const routes = [
     name: "board",
     component: () => import("@/views/BoardView.vue"),
     redirect: "/board/list",
-    beforeEnter: onlyAuthUser,
+    // beforeEnter: onlyAuthUser,
     children: [
       {
         path: "list",

@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public void register(UserDto userDto) throws Exception {
-		userMapper.register(userDto);
+	public boolean register(UserDto userDto) throws Exception {
+		return userMapper.register(userDto)==1;
 	}
 
 	@Override

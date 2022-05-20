@@ -12,7 +12,7 @@ public interface UserMapper {
 	// 중복확인
 	int idCheck(String id) throws Exception;
 	// 회원가입
-	void register(UserDto userDto) throws Exception;
+	int register(UserDto userDto) throws Exception;
 	// 로그인
 	UserDto login(Map<String, String> map) throws Exception;
 	// 탈퇴
