@@ -24,9 +24,16 @@
     </b-row>
     <b-row class="mb-1">
       <b-col>
+        <div>
+          {{ article.likeNum }}
+          <span @click="clkLike">
+            <b-icon icon="hand-thumbs-up" v-if="!isLike"></b-icon>
+            <b-icon icon="hand-thumbs-up-fill" v-else></b-icon>
+          </span>
+        </div>
         <b-card
           :header-html="`<h3>${article.articleno}.
-          ${article.subject} [${article.hit}]</h3><div><h6>${article.userid}</div><div>${article.regtime}</h6></div>`"
+          ${article.subject} </h3><div><h6>${article.userid}</div><div>조회수:${article.hit}</div><div>${article.regtime}</h6></div>`"
           class="mb-2"
           border-variant="dark"
           no-body
@@ -44,14 +51,19 @@
 // import moment from "moment";
 import http from "@/api/http";
 
+import { mapState } from "vuex";
+const memberStore = "memberStore";
+
 export default {
   name: "BoardDetail",
   data() {
     return {
       article: {},
+      isLike: false,
     };
   },
   computed: {
+    ...mapState(memberStore, ["userInfo"]),
     message() {
       if (this.article.content)
         return this.article.content.split("\n").join("<br>");
@@ -59,8 +71,13 @@ export default {
     },
   },
   created() {
-    http.get(`/board/${this.$route.params.articleno}`).then(({ data }) => {
-      this.article = data;
+    http.put(`/board/hit/${this.$route.params.articleno}`).then(() => {
+      http
+        .get(`/board/${this.$route.params.articleno}/${this.userInfo.userId}`)
+        .then(({ data }) => {
+          this.article = data;
+          this.isLike = data.isLike == 1 ? true : false;
+        });
     });
   },
   methods: {
@@ -81,6 +98,41 @@ export default {
           params: { articleno: this.article.articleno },
         });
       }
+    },
+    clkLike() {
+      if (this.isLike) {
+        http
+          .put(
+            `/board/unlike/${this.$route.params.articleno}/${this.userInfo.userId}`,
+          )
+          .then(() => {
+            http
+              .get(
+                `/board/${this.$route.params.articleno}/${this.userInfo.userId}`,
+              )
+              .then(({ data }) => {
+                this.article = data;
+                this.isLike = data.isLike == 1 ? true : false;
+              });
+          });
+      } else {
+        http
+          .put(
+            `/board/like/${this.$route.params.articleno}/${this.userInfo.userId}`,
+          )
+          .then(() => {
+            http
+              .get(
+                `/board/${this.$route.params.articleno}/${this.userInfo.userId}`,
+              )
+              .then(({ data }) => {
+                this.article = data;
+                this.isLike = data.isLike == 1 ? true : false;
+              });
+          });
+      }
+      // 하트 수정
+      this.isLike = !this.isLike;
     },
   },
   // filters: {

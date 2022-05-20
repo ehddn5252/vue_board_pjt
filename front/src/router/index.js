@@ -45,6 +45,12 @@ const routes = [
         name: "signUp",
         component: () => import("@/components/user/MemberRegister.vue"),
       },
+      {
+        path: "mypage",
+        name: "mypage",
+        beforeEnter: onlyAuthUser,
+        component: () => import("@/components/user/MemberMyPage.vue"),
+      },
     ],
   },
   {

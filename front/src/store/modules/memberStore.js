@@ -28,6 +28,8 @@ const memberStore = {
   },
   actions: {
     async userConfirm({ commit }, user) {
+      console.log("memberStor.js->userConfirm");
+      console.log(user);
       await login(
         user,
         (response) => {
