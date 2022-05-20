@@ -28,13 +28,10 @@ export default {
       content: "",
     };
   },
-  props: {
-    qnano: Number,
-  },
   methods: {
     registComment() {
       const comment = {
-        qnano: this.qnano,
+        qnano: this.$store.state.qnano,
         content: this.content,
         // 나중에 동적으로 이름 바뀌도록 수정
         userid: "ssafy",
@@ -50,8 +47,8 @@ export default {
           .then(() => {
             // console.log(this);
             // this.$emit("changeComments");
-            location.reload();
             this.content = "";
+            this.$store.dispatch("getComments", this.$store.state.qnano);
           });
       }
     },

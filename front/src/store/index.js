@@ -1,14 +1,24 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import http from "@/api/http";
+import memberStore from "@/store/modules/memberStore.js";
 
 // import axios from "axios";
 
-// import createPersistedState from "vuex-persistedstate";
+import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  modules: {
+    memberStore,
+  },
+  plugins: [
+    createPersistedState({
+      // 브라우저 종료시 제거하기 위해 localStorage가 아닌 sessionStorage로 변경. (default: localStorage)
+      storage: sessionStorage,
+    }),
+  ],
   state: {
     sidos: [{ value: null, text: "시도 선택" }],
     guguns: [{ value: null, text: "구군 선택" }],
@@ -26,6 +36,8 @@ export default new Vuex.Store({
       // { title: '할 일1', completed: false },
       // { title: '할 일2', completed: false },
     ],
+    comments: [],
+    qnano: null,
   },
   getters: {
     aroundStoreLonLat(state) {
@@ -54,6 +66,14 @@ export default new Vuex.Store({
     },
   },
   mutations: {
+    SET_QNANO(state, qnano) {
+      console.log(state.qnano);
+      state.qnano = qnano;
+    },
+    // 댓글 초기화
+    SET_COMMENTS(state, comments) {
+      state.comments = JSON.parse(JSON.stringify(comments));
+    },
     /////////////////////////////// House start /////////////////////////////////////
     SET_SIDO_LIST(state, sidos) {
       sidos.forEach((sido) => {
@@ -73,43 +93,6 @@ export default new Vuex.Store({
 
     SET_AROUND_STORE_LIST(state, aroundStores) {
       console.log(" in SET_AROUND_STORE_LIST");
-      // aroundStores.forEach((aroundStore) => {
-      //   state.aroundStores.push({
-      //     title: "제목",
-      //     bizesId: aroundStore.bizesId, // "10142096",
-      //     bizesNm: aroundStore.bizesNm, //"카페비스타",
-      //     brchNm: aroundStore.brchNm, //: "리베라호텔서울",
-      //     indsLclsCd: aroundStore.indsLclsCd, //: "Q",
-      //     indsLclsNm: aroundStore.indsLclsNm, //: "음식",
-      //     indsMclsCd: aroundStore.indsMclsCd, //"indsMclsCd": "Q12",
-      //     indsMclsNm: aroundStore.indsMclsNm, //: "커피점/카페",
-      //     indsSclsCd: aroundStore.indsSclsCd, //: "Q12A01",
-      //     indsSclsNm: aroundStore.indsSclsNm, //: "커피전문점/카페/다방",
-      //     ksicCd: aroundStore.ksicCd, //: "I56220",
-      //     ksicNm: aroundStore.ksicNm, //: "비알콜 음료점업",
-      //     ctprvnCd: aroundStore.ctprvnCd, //: "11",
-      //     ctprvnNm: aroundStore.ctprvnNm, //: "서울특별시",
-      //     signguCd: aroundStore.signguCd, //: "11680",
-      //     signguNm: aroundStore.signguNm, //: "강남구",
-      //     // adongCd: "adongCd", //: "1168056500",
-      //     // adongNm: "adongNm", //: "청담동",
-      //     ldongCd: aroundStore.ldongCd, //: "1168010400",
-      //     ldongNm: aroundStore.ldongNm, //: "청담동",
-      //     lnoCd: aroundStore.lnoCd, //: "1168010400100530007",
-
-      //     lnoAdr: aroundStore.lnoAdr, //: "서울특별시 강남구 청담동 53-7",
-      //     rdnmCd: aroundStore.rdnmCd, //: "116802122002",
-      //     rdnm: aroundStore.rdnm, //: "서울특별시 강남구 영동대로",
-      //     //"bldMngNo": "1168010400100530007017901",
-      //     bldNm: aroundStore.bldNm, //: "호텔리베라",
-      //     rdnmAdr: aroundStore.rdnmAdr, //: "서울특별시 강남구 영동대로 737",
-      //     lon: aroundStore.lon, //: ,//127.054169818602,
-      //     lat: aroundStore.lat, //: 37.5237556463502
-      //     adongCd: aroundStore.bizesNm,
-      //     adongNm: aroundStore.adongNm,
-      //     text: aroundStore.aroundStoreName,
-      //   });
-      // });
       state.aroundStores = JSON.parse(JSON.stringify(aroundStores));
       state.mapList = JSON.parse(JSON.stringify(aroundStores));
       console.log(state.mapList);
@@ -168,6 +151,13 @@ export default new Vuex.Store({
     //////////////////////////// Todo List end //////////////////////////////////
   },
   actions: {
+    // 코멘트
+    getComments({ commit }, qnano) {
+      http.get(`/comments/${qnano}`).then(({ data }) => {
+        console.log(data);
+        commit("SET_COMMENTS", data);
+      });
+    },
     /////////////////////////////// AroundStore start ///////////////////////////////
     getSidoAroundMap({ commit }) {
       http
@@ -358,11 +348,4 @@ export default new Vuex.Store({
     },
     //////////////////////////// Todo List end //////////////////////////////////
   },
-  modules: {},
-  // plugins: [
-  //   createPersistedState({
-  //     // 브라우저 종료시 제거하기 위해 localStorage가 아닌 sessionStorage로 변경. (default: localStorage)
-  //     storage: sessionStorage,
-  //   }),
-  // ],
 });

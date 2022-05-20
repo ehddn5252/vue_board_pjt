@@ -47,17 +47,9 @@ export default {
   },
   methods: {
     deleteComment() {
-      http
-        .delete(`/comments/${this.commentsno}`)
-        .then(({ data }) => {
-          console.log(data);
-        })
-        .then(() => {
-          console.log(this);
-          // console.log("changeComments");
-          // this.$emit("changeComments");
-          location.reload();
-        });
+      http.delete(`/comments/${this.commentsno}`).then(() => {
+        this.$store.dispatch("getComments", this.$store.state.qnano);
+      });
     },
   },
 };

@@ -15,16 +15,12 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import CommentsItem from "@/components/qna/item/CommentsItem";
 import http from "@/api/http";
 
 export default {
   name: "CommentsList",
-  data() {
-    return {
-      comments: [],
-    };
-  },
   props: {
     qnano: Number,
   },
@@ -39,18 +35,12 @@ export default {
         this.comments = data;
       });
     },
-    // changeComments() {
-    //   console.log("CommentsList");
-    //   this.$emit("changeComments");
-    // },
   },
-  created() {
-    console.log(this.qnano);
-    console.log(`/comments/${this.qnano}`);
-    http.get(`/comments/${this.qnano}`).then(({ data }) => {
-      console.log(data);
-      this.comments = data;
-    });
+  computed: {
+    ...mapState(["comments"]),
+  },
+  mounted() {
+    this.$store.dispatch("getComments", this.qnano);
   },
 };
 </script>

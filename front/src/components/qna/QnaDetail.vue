@@ -42,7 +42,7 @@
     <b-col v-if="qna.qnano">
       <b-row>
         <b-col>
-          <comments-input v-bind="{ qnano: qna.qnano }"></comments-input>
+          <comments-input></comments-input>
         </b-col>
       </b-row>
       <b-row>
@@ -81,12 +81,10 @@ export default {
       if (this.qna.content) return this.qna.content.split("\n").join("<br>");
       return "";
     },
-    isQnaNo() {
-      console.log(`isQnaNo=${this.qna.qnano != null}`);
-      return this.qna.qnano != null;
-    },
   },
   created() {
+    this.$store.commit("SET_QNANO", this.$route.params.qnano);
+
     http.put(`/qna/hit/${this.$route.params.qnano}`).then(() => {
       http.get(`/qna/${this.$route.params.qnano}`).then(({ data }) => {
         this.qna = data[0];
