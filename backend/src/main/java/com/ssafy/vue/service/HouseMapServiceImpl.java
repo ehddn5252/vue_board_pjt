@@ -63,6 +63,12 @@ public class HouseMapServiceImpl implements HouseMapService {
 	}
 
 	@Override
+	public List<HouseInfoDto> getAptInDong2(String dongCode) throws Exception {
+		// TODO Auto-generated method stub
+		return houseMapMapper.getAptInDong2(dongCode);
+	}
+	
+	@Override
 	public List<HouseInfoDto> getRecommendList(String dong, String price_, String buildYear_) throws Exception {
 		List<HouseInfoDto> h = houseMapMapper.getAptInDong(dong);
 		List<HouseInfoDto> h2 = new ArrayList<HouseInfoDto>();
@@ -197,5 +203,7 @@ public class HouseMapServiceImpl implements HouseMapService {
 			}
 		}
 	}
+
+	
 	
 }

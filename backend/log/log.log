@@ -32,3 +32,902 @@
 [2m2022-05-21 00:43:21.526[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.s.vue.controller.HouseMapController   [0;39m [2m:[0;39m gugun : [SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11110, gugunName=종로구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11140, gugunName=중구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11170, gugunName=용산구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11200, gugunName=성동구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11215, gugunName=광진구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11230, gugunName=동대문구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11260, gugunName=중랑구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11290, gugunName=성북구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11305, gugunName=강북구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11320, gugunName=도봉구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11350, gugunName=노원구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11380, gugunName=은평구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11410, gugunName=서대문구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11440, gugunName=마포구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11470, gugunName=양천구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11500, gugunName=강서구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11530, gugunName=구로구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11545, gugunName=금천구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11560, gugunName=영등포구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11590, gugunName=동작구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11620, gugunName=관악구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11650, gugunName=서초구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11680, gugunName=강남구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11710, gugunName=송파구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11740, gugunName=강동구]]
 [2m2022-05-21 00:44:47.370[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.s.vue.controller.HouseMapController   [0;39m [2m:[0;39m sido : [SidoGugunCodeDto [sidoCode=11, sidoName=서울특별시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=26, sidoName=부산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=27, sidoName=대구광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=28, sidoName=인천광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=29, sidoName=광주광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=30, sidoName=대전광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=31, sidoName=울산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=36, sidoName=세종특별자치시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=41, sidoName=경기도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=42, sidoName=강원도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=43, sidoName=충청북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=44, sidoName=충청남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=45, sidoName=전라북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=46, sidoName=전라남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=47, sidoName=경상북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=48, sidoName=경상남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=50, sidoName=제주특별자치도, gugunCode=null, gugunName=null]]
 [2m2022-05-21 00:44:54.338[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.s.vue.controller.HouseMapController   [0;39m [2m:[0;39m gugun : [SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11110, gugunName=종로구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11140, gugunName=중구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11170, gugunName=용산구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11200, gugunName=성동구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11215, gugunName=광진구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11230, gugunName=동대문구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11260, gugunName=중랑구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11290, gugunName=성북구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11305, gugunName=강북구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11320, gugunName=도봉구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11350, gugunName=노원구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11380, gugunName=은평구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11410, gugunName=서대문구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11440, gugunName=마포구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11470, gugunName=양천구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11500, gugunName=강서구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11530, gugunName=구로구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11545, gugunName=금천구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11560, gugunName=영등포구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11590, gugunName=동작구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11620, gugunName=관악구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11650, gugunName=서초구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11680, gugunName=강남구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11710, gugunName=송파구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11740, gugunName=강동구]]
+[2m2022-05-21 00:57:47.356[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mcom.ssafy.vue.controller.QnaController  [0;39m [2m:[0;39m list - 호출
+[2m2022-05-21 00:57:48.963[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mcom.ssafy.vue.controller.QnaController  [0;39m [2m:[0;39m retrieveQna - 호출
+[2m2022-05-21 00:57:49.133[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:57:51.042[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m writeComments - 호출
+[2m2022-05-21 00:57:51.069[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:08.157[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m deleteComments - 호출
+[2m2022-05-21 00:58:08.256[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:26.530[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m writeComments - 호출
+[2m2022-05-21 00:58:26.551[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:28.392[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m writeComments - 호출
+[2m2022-05-21 00:58:28.417[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:29.286[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m deleteComments - 호출
+[2m2022-05-21 00:58:29.310[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:29.815[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m deleteComments - 호출
+[2m2022-05-21 00:58:29.839[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:31.651[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m writeComments - 호출
+[2m2022-05-21 00:58:31.673[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:33.382[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m writeComments - 호출
+[2m2022-05-21 00:58:33.407[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 00:58:50.523[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.s.vue.controller.HouseMapController   [0;39m [2m:[0;39m sido : [SidoGugunCodeDto [sidoCode=11, sidoName=서울특별시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=26, sidoName=부산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=27, sidoName=대구광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=28, sidoName=인천광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=29, sidoName=광주광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=30, sidoName=대전광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=31, sidoName=울산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=36, sidoName=세종특별자치시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=41, sidoName=경기도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=42, sidoName=강원도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=43, sidoName=충청북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=44, sidoName=충청남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=45, sidoName=전라북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=46, sidoName=전라남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=47, sidoName=경상북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=48, sidoName=경상남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=50, sidoName=제주특별자치도, gugunCode=null, gugunName=null]]
+[2m2022-05-21 00:58:51.086[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-21 01:09:55.815[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.816[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.816[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.816[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.816[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.817[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.817[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.818[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.818[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.818[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:09:55.818[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:09:56.823[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:09:57.478[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 3916 ms
+[2m2022-05-21 01:09:58.802[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-21 01:09:59.344[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2022-05-21 01:09:59.414[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2022-05-21 01:09:59.425[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 6 ms
+[2m2022-05-21 01:09:59.528[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.s.vue.controller.HouseMapController   [0;39m [2m:[0;39m sido : [SidoGugunCodeDto [sidoCode=11, sidoName=서울특별시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=26, sidoName=부산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=27, sidoName=대구광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=28, sidoName=인천광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=29, sidoName=광주광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=30, sidoName=대전광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=31, sidoName=울산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=36, sidoName=세종특별자치시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=41, sidoName=경기도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=42, sidoName=강원도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=43, sidoName=충청북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=44, sidoName=충청남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=45, sidoName=전라북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=46, sidoName=전라남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=47, sidoName=경상북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=48, sidoName=경상남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=50, sidoName=제주특별자치도, gugunCode=null, gugunName=null]]
+[2m2022-05-21 01:10:00.540[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-21 01:10:02.049[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-21 01:15:53.204[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.204[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.205[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:15:53.206[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:15:53.570[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:15:53.858[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2540 ms
+[2m2022-05-21 01:15:54.381[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:15:54.404[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:15:54.425[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:17:12.446[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.446[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.447[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.447[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.447[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.447[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.447[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.448[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.448[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.448[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:12.448[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:17:12.777[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:17:12.984[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2250 ms
+[2m2022-05-21 01:17:13.247[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:17:13.263[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:17:13.272[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:17:51.224[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.224[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.224[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:17:51.226[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:17:51.570[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:17:51.707[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2108 ms
+[2m2022-05-21 01:17:51.986[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:17:51.999[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:17:52.011[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:18:32.832[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:32.833[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:18:33.125[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:18:33.289[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1943 ms
+[2m2022-05-21 01:18:33.560[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:18:33.570[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:18:33.580[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:18:43.914[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.914[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.914[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.915[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.915[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.915[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.915[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.916[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.916[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.916[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:18:43.916[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:18:44.066[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:18:44.260[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2061 ms
+[2m2022-05-21 01:18:44.540[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:18:44.550[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:18:44.560[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:25:32.006[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.ssafy.vue.HappyhouseFinalPjtApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/ssafy/vue/config/WebMvcConfiguration.class] cannot be opened because it does not exist
+[2m2022-05-21 01:25:32.007[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:25:32.037[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.ssafy.vue.HappyhouseFinalPjtApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/ssafy/vue/config/WebMvcConfiguration.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/ssafy/vue/config/WebMvcConfiguration.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:199)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 18 common frames omitted
+
+[2m2022-05-21 01:25:38.835[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.835[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.835[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.835[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.835[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.835[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.836[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.836[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.836[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.836[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:25:38.836[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:25:39.179[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:25:39.447[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2882 ms
+[2m2022-05-21 01:25:39.782[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:25:39.794[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:25:39.806[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:27:53.605[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.ssafy.vue.HappyhouseFinalPjtApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/ssafy/vue/VueApiApplication.class] cannot be opened because it does not exist
+[2m2022-05-21 01:27:53.622[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.ssafy.vue.HappyhouseFinalPjtApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/ssafy/vue/VueApiApplication.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/ssafy/vue/VueApiApplication.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:199)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 18 common frames omitted
+
+[2m2022-05-21 01:29:56.009[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\BestAptMapper.class]
+[2m2022-05-21 01:29:56.010[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\BoardMapper.class]
+[2m2022-05-21 01:29:56.010[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\CommentsMapper.class]
+[2m2022-05-21 01:29:56.010[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\HouseMapMapper.class]
+[2m2022-05-21 01:29:56.010[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\InterestMapMapper.class]
+[2m2022-05-21 01:29:56.010[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\InterestMapper.class]
+[2m2022-05-21 01:29:56.011[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\NoticeMapper.class]
+[2m2022-05-21 01:29:56.011[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\QnaMapper.class]
+[2m2022-05-21 01:29:56.011[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\StoreMapper.class]
+[2m2022-05-21 01:29:56.011[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\UserMapper.class]
+[2m2022-05-21 01:29:56.011[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface
+[2m2022-05-21 01:29:56.017[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'bestAptMapper'.
+[2m2022-05-21 01:29:56.017[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface
+[2m2022-05-21 01:29:56.022[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'boardMapper'.
+[2m2022-05-21 01:29:56.022[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface
+[2m2022-05-21 01:29:56.027[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'commentsMapper'.
+[2m2022-05-21 01:29:56.027[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface
+[2m2022-05-21 01:29:56.032[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'houseMapMapper'.
+[2m2022-05-21 01:29:56.032[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface
+[2m2022-05-21 01:29:56.037[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'interestMapMapper'.
+[2m2022-05-21 01:29:56.037[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface
+[2m2022-05-21 01:29:56.041[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'interestMapper'.
+[2m2022-05-21 01:29:56.042[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface
+[2m2022-05-21 01:29:56.047[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'noticeMapper'.
+[2m2022-05-21 01:29:56.047[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface
+[2m2022-05-21 01:29:56.053[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'qnaMapper'.
+[2m2022-05-21 01:29:56.053[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface
+[2m2022-05-21 01:29:56.061[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'storeMapper'.
+[2m2022-05-21 01:29:56.061[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Creating MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface
+[2m2022-05-21 01:29:56.111[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+[2m2022-05-21 01:29:56.223[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\BestAptMapper.class]
+[2m2022-05-21 01:29:56.223[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\BoardMapper.class]
+[2m2022-05-21 01:29:56.223[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\CommentsMapper.class]
+[2m2022-05-21 01:29:56.223[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\HouseMapMapper.class]
+[2m2022-05-21 01:29:56.224[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\InterestMapMapper.class]
+[2m2022-05-21 01:29:56.224[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\InterestMapper.class]
+[2m2022-05-21 01:29:56.224[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\NoticeMapper.class]
+[2m2022-05-21 01:29:56.224[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\QnaMapper.class]
+[2m2022-05-21 01:29:56.224[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\StoreMapper.class]
+[2m2022-05-21 01:29:56.224[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Identified candidate component class: file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\mapper\UserMapper.class]
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.225[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.226[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.226[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:29:56.226[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:29:56.755[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:29:57.306[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 4742 ms
+[2m2022-05-21 01:29:57.563[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariConfig          [0;39m [2m:[0;39m Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54486a51
+[2m2022-05-21 01:29:57.864[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\apt.xml]'
+[2m2022-05-21 01:29:57.882[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\bestApt.xml]'
+[2m2022-05-21 01:29:57.905[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\board.xml]'
+[2m2022-05-21 01:29:57.935[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\comments.xml]'
+[2m2022-05-21 01:29:57.951[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\dongtotal.xml]'
+[2m2022-05-21 01:29:57.973[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\interest.xml]'
+[2m2022-05-21 01:29:57.999[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\interest2.xml]'
+[2m2022-05-21 01:29:58.021[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\notice.xml]'
+[2m2022-05-21 01:29:58.039[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\qna.xml]'
+[2m2022-05-21 01:29:58.054[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\store.xml]'
+[2m2022-05-21 01:29:58.072[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.mybatis.spring.SqlSessionFactoryBean  [0;39m [2m:[0;39m Parsed mapper file: 'file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\mappers\user.xml]'
+[2m2022-05-21 01:29:58.211[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:29:58.228[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:29:58.244[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:30:02.028[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:30:02.029[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:30:02.194[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:30:02.800[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2587 ms
+[2m2022-05-21 01:30:03.582[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+[2m2022-05-21 01:30:03.601[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2022-05-21 01:30:03.615[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMain' defined in file [C:\Users\dw\Desktop\project_workspace\vue_board_pjt\backend\target\classes\com\ssafy\vue\controller\userMain.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.ssafy.vue.HappyhouseFinalPjtApplication.main(HappyhouseFinalPjtApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ssafy.vue.controller.userMain]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ssafy.vue.service.JwtServiceImpl cannot be resolved
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+	JwtServiceImpl cannot be resolved to a type
+
+	at com.ssafy.vue.controller.userMain.<init>(userMain.java:29)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
+
+[2m2022-05-21 01:31:51.569[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.570[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.570[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.570[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.571[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.571[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.571[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.572[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.572[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.572[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:31:51.572[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:31:51.935[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:31:52.233[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 3258 ms
+[2m2022-05-21 01:31:53.032[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-21 01:31:53.199[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2022-05-21 01:31:53.635[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-21 01:33:24.315[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'bestAptMapper' and 'com.ssafy.vue.mapper.BestAptMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.316[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'boardMapper' and 'com.ssafy.vue.mapper.BoardMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.317[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'commentsMapper' and 'com.ssafy.vue.mapper.CommentsMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.317[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'houseMapMapper' and 'com.ssafy.vue.mapper.HouseMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.317[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapMapper' and 'com.ssafy.vue.mapper.InterestMapMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.318[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'interestMapper' and 'com.ssafy.vue.mapper.InterestMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.318[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'noticeMapper' and 'com.ssafy.vue.mapper.NoticeMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.319[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'qnaMapper' and 'com.ssafy.vue.mapper.QnaMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.319[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'storeMapper' and 'com.ssafy.vue.mapper.StoreMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.320[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.ssafy.vue.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+[2m2022-05-21 01:33:24.320[0;39m [33m WARN[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.m.s.mapper.ClassPathMapperScanner     [0;39m [2m:[0;39m No MyBatis mapper was found in '[com.**.mapper]' package. Please check your configuration.
+[2m2022-05-21 01:33:24.654[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2022-05-21 01:33:24.898[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2486 ms
+[2m2022-05-21 01:33:25.835[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-21 01:33:26.149[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2022-05-21 01:33:26.645[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-21 01:33:34.551[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2022-05-21 01:33:34.558[0;39m [32m INFO[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 5 ms
+[2m2022-05-21 01:33:34.663[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.s.vue.controller.HouseMapController   [0;39m [2m:[0;39m sido : [SidoGugunCodeDto [sidoCode=11, sidoName=서울특별시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=26, sidoName=부산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=27, sidoName=대구광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=28, sidoName=인천광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=29, sidoName=광주광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=30, sidoName=대전광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=31, sidoName=울산광역시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=36, sidoName=세종특별자치시, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=41, sidoName=경기도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=42, sidoName=강원도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=43, sidoName=충청북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=44, sidoName=충청남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=45, sidoName=전라북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=46, sidoName=전라남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=47, sidoName=경상북도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=48, sidoName=경상남도, gugunCode=null, gugunName=null], SidoGugunCodeDto [sidoCode=50, sidoName=제주특별자치도, gugunCode=null, gugunName=null]]
+[2m2022-05-21 01:33:45.708[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.s.vue.controller.HouseMapController   [0;39m [2m:[0;39m gugun : [SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11110, gugunName=종로구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11140, gugunName=중구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11170, gugunName=용산구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11200, gugunName=성동구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11215, gugunName=광진구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11230, gugunName=동대문구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11260, gugunName=중랑구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11290, gugunName=성북구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11305, gugunName=강북구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11320, gugunName=도봉구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11350, gugunName=노원구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11380, gugunName=은평구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11410, gugunName=서대문구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11440, gugunName=마포구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11470, gugunName=양천구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11500, gugunName=강서구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11530, gugunName=구로구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11545, gugunName=금천구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11560, gugunName=영등포구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11590, gugunName=동작구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11620, gugunName=관악구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11650, gugunName=서초구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11680, gugunName=강남구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11710, gugunName=송파구], SidoGugunCodeDto [sidoCode=null, sidoName=null, gugunCode=11740, gugunName=강동구]]
+[2m2022-05-21 01:33:47.744[0;39m [31mERROR[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.ssafy.vue.mapper.HouseMapMapper.getAptInDong2] with root cause
+
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.ssafy.vue.mapper.HouseMapMapper.getAptInDong2
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:108)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:35)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:95)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy864.getAptInDong2(Unknown Source)
+	at com.ssafy.vue.service.HouseMapServiceImpl.getAptInDong2(HouseMapServiceImpl.java:68)
+	at com.ssafy.vue.controller.HouseMapController.apt2(HouseMapController.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+[2m2022-05-21 01:36:13.279[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
+[2m2022-05-21 01:36:22.702[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mcom.ssafy.vue.controller.QnaController  [0;39m [2m:[0;39m list - 호출
+[2m2022-05-21 01:36:24.357[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mcom.ssafy.vue.controller.QnaController  [0;39m [2m:[0;39m retrieveQna - 호출
+[2m2022-05-21 01:36:24.448[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 01:36:26.207[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m deleteComments - 호출
+[2m2022-05-21 01:36:26.240[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 01:36:26.905[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m deleteComments - 호출
+[2m2022-05-21 01:36:26.933[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 01:36:28.223[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m writeComments - 호출
+[2m2022-05-21 01:36:28.246[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.s.vue.controller.CommentsController   [0;39m [2m:[0;39m retrieveComments - 호출
+[2m2022-05-21 01:36:29.564[0;39m [32mDEBUG[0;39m [35m9972[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.BoardController  [0;39m [2m:[0;39m retrieveBoard - 호출
