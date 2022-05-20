@@ -35,9 +35,14 @@ export default {
   },
   methods: {
     ...mapActions(["detailAroundStore"]),
+
     selectAroundStore() {
+      // this.$store.state.aroundStores=[this.aroundStore.lat,this.aroundStore.log];
       console.log("listRow : ", this.aroundStore);
       // this.$store.dispatch("getHouse", this.house);
+      console.log("this.aroundStore.lat,this.aroundStore.lon");
+      console.log(this.aroundStore.lat, this.aroundStore.lon);
+      this.$store.state.mapList = [this.aroundStore];
       this.detailAroundStore(this.aroundStore);
     },
     colorChange(flag) {

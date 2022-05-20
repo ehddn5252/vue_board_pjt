@@ -18,20 +18,6 @@ export default {
   name: "AroundStoreMap",
   data() {
     return {
-      markerPositions1: [
-        [33.452278, 126.567803],
-        [33.452671, 126.574792],
-        [33.451744, 126.572441],
-      ],
-      markerPositions2: [
-        [37.499590490909185, 127.0263723554437],
-        [37.499427948430814, 127.02794423197847],
-        [37.498553760499505, 127.02882598822454],
-        [37.497625593121384, 127.02935713582038],
-        [37.49629291770947, 127.02587362608637],
-        [37.49754540521486, 127.02546694890695],
-        [37.49646391248451, 127.02675574250912],
-      ],
       markers: [],
       infowindow: null,
     };
@@ -82,15 +68,17 @@ export default {
       this.map.relayout();
     },
     displayMarker(markerPositions) {
+      // this.markers = this.$store.state.mapList;
+      console.log("markerPositions");
       console.log(markerPositions);
-      if (this.markers.length > 0) {
-        this.markers.forEach((marker) => marker.setMap(null));
-      }
+      // if (this.markers.length > 0) {
+      //   this.markers.forEach((marker) => marker.setMap(null));
+      // }
 
       const positions = markerPositions.map((position) => {
         return new kakao.maps.LatLng(...position);
       });
-
+      console.log(positions);
       if (positions.length > 0) {
         this.markers = positions.map((position) => {
           return new kakao.maps.Marker({ map: this.map, position });

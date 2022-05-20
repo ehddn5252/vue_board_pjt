@@ -21,7 +21,7 @@ export default new Vuex.Store({
     checkedStoreList: [],
     environs: [],
     environ: null,
-
+    mapList: [],
     todos: [
       // { title: '할 일1', completed: false },
       // { title: '할 일2', completed: false },
@@ -29,9 +29,11 @@ export default new Vuex.Store({
   },
   getters: {
     aroundStoreLonLat(state) {
-      var arr = new Array(state.aroundStores.length);
+      console.log("state.mapList");
+      console.log(state.mapList);
+      var arr = new Array(state.mapList.length);
       for (var i = 0; i < arr.length; ++i) {
-        var latlon = [state.aroundStores[i].lat, state.aroundStores[i].lon];
+        var latlon = [state.mapList[i].lat, state.mapList[i].lon];
         arr[i] = latlon;
       }
       return arr;
@@ -71,44 +73,46 @@ export default new Vuex.Store({
 
     SET_AROUND_STORE_LIST(state, aroundStores) {
       console.log(" in SET_AROUND_STORE_LIST");
+      // aroundStores.forEach((aroundStore) => {
+      //   state.aroundStores.push({
+      //     title: "제목",
+      //     bizesId: aroundStore.bizesId, // "10142096",
+      //     bizesNm: aroundStore.bizesNm, //"카페비스타",
+      //     brchNm: aroundStore.brchNm, //: "리베라호텔서울",
+      //     indsLclsCd: aroundStore.indsLclsCd, //: "Q",
+      //     indsLclsNm: aroundStore.indsLclsNm, //: "음식",
+      //     indsMclsCd: aroundStore.indsMclsCd, //"indsMclsCd": "Q12",
+      //     indsMclsNm: aroundStore.indsMclsNm, //: "커피점/카페",
+      //     indsSclsCd: aroundStore.indsSclsCd, //: "Q12A01",
+      //     indsSclsNm: aroundStore.indsSclsNm, //: "커피전문점/카페/다방",
+      //     ksicCd: aroundStore.ksicCd, //: "I56220",
+      //     ksicNm: aroundStore.ksicNm, //: "비알콜 음료점업",
+      //     ctprvnCd: aroundStore.ctprvnCd, //: "11",
+      //     ctprvnNm: aroundStore.ctprvnNm, //: "서울특별시",
+      //     signguCd: aroundStore.signguCd, //: "11680",
+      //     signguNm: aroundStore.signguNm, //: "강남구",
+      //     // adongCd: "adongCd", //: "1168056500",
+      //     // adongNm: "adongNm", //: "청담동",
+      //     ldongCd: aroundStore.ldongCd, //: "1168010400",
+      //     ldongNm: aroundStore.ldongNm, //: "청담동",
+      //     lnoCd: aroundStore.lnoCd, //: "1168010400100530007",
 
-      aroundStores.forEach((aroundStore) => {
-        state.aroundStores.push({
-          title: "제목",
-          bizesId: aroundStore.bizesId, // "10142096",
-          bizesNm: aroundStore.bizesNm, //"카페비스타",
-          brchNm: aroundStore.brchNm, //: "리베라호텔서울",
-          indsLclsCd: aroundStore.indsLclsCd, //: "Q",
-          indsLclsNm: aroundStore.indsLclsNm, //: "음식",
-          indsMclsCd: aroundStore.indsMclsCd, //"indsMclsCd": "Q12",
-          indsMclsNm: aroundStore.indsMclsNm, //: "커피점/카페",
-          indsSclsCd: aroundStore.indsSclsCd, //: "Q12A01",
-          indsSclsNm: aroundStore.indsSclsNm, //: "커피전문점/카페/다방",
-          ksicCd: aroundStore.ksicCd, //: "I56220",
-          ksicNm: aroundStore.ksicNm, //: "비알콜 음료점업",
-          ctprvnCd: aroundStore.ctprvnCd, //: "11",
-          ctprvnNm: aroundStore.ctprvnNm, //: "서울특별시",
-          signguCd: aroundStore.signguCd, //: "11680",
-          signguNm: aroundStore.signguNm, //: "강남구",
-          // adongCd: "adongCd", //: "1168056500",
-          // adongNm: "adongNm", //: "청담동",
-          ldongCd: aroundStore.ldongCd, //: "1168010400",
-          ldongNm: aroundStore.ldongNm, //: "청담동",
-          lnoCd: aroundStore.lnoCd, //: "1168010400100530007",
-
-          lnoAdr: aroundStore.lnoAdr, //: "서울특별시 강남구 청담동 53-7",
-          rdnmCd: aroundStore.rdnmCd, //: "116802122002",
-          rdnm: aroundStore.rdnm, //: "서울특별시 강남구 영동대로",
-          //"bldMngNo": "1168010400100530007017901",
-          bldNm: aroundStore.bldNm, //: "호텔리베라",
-          rdnmAdr: aroundStore.rdnmAdr, //: "서울특별시 강남구 영동대로 737",
-          lon: aroundStore.lon, //: ,//127.054169818602,
-          lat: aroundStore.lat, //: 37.5237556463502
-          adongCd: aroundStore.bizesNm,
-          adongNm: aroundStore.adongNm,
-          text: aroundStore.aroundStoreName,
-        });
-      });
+      //     lnoAdr: aroundStore.lnoAdr, //: "서울특별시 강남구 청담동 53-7",
+      //     rdnmCd: aroundStore.rdnmCd, //: "116802122002",
+      //     rdnm: aroundStore.rdnm, //: "서울특별시 강남구 영동대로",
+      //     //"bldMngNo": "1168010400100530007017901",
+      //     bldNm: aroundStore.bldNm, //: "호텔리베라",
+      //     rdnmAdr: aroundStore.rdnmAdr, //: "서울특별시 강남구 영동대로 737",
+      //     lon: aroundStore.lon, //: ,//127.054169818602,
+      //     lat: aroundStore.lat, //: 37.5237556463502
+      //     adongCd: aroundStore.bizesNm,
+      //     adongNm: aroundStore.adongNm,
+      //     text: aroundStore.aroundStoreName,
+      //   });
+      // });
+      state.aroundStores = JSON.parse(JSON.stringify(aroundStores));
+      state.mapList = JSON.parse(JSON.stringify(aroundStores));
+      console.log(state.mapList);
     },
 
     CLEAR_SIDO_LIST(state) {
@@ -251,12 +255,7 @@ export default new Vuex.Store({
       // const SERVICE_KEY ="yOYPxjA2Luqpjh8gS0r0pw69WoBHUn5HXJzTznjhCK78Aab2ZiFJ5pAGNq%2FLoVzbI1pCfMG10RPiGyk%2BqfFAIQ%3D%3D"; //process.env.VUE_APP_APT_DEAL_API_KEY;
       const DECODE_SERVICE_KEY =
         "yOYPxjA2Luqpjh8gS0r0pw69WoBHUn5HXJzTznjhCK78Aab2ZiFJ5pAGNq/LoVzbI1pCfMG10RPiGyk+qfFAIQ==";
-      // const SERVICE_KEY =
-      //   "9Xo0vlglWcOBGUDxH8PPbuKnlBwbWU6aO7%2Bk3FV4baF9GXok1yxIEF%2BIwr2%2B%2F%2F4oVLT8bekKU%2Bk9ztkJO0wsBw%3D%3D";
-      // http://apis.data.go.kr/B553077/api/open/sdsc2/storeZoneInAdmi?divId=adongCd&key=1168069000
 
-      // callback url
-      // http://apis.data.go.kr/B553077/api/open/sdsc2/storeListInDong
       const SERVICE_URL =
         "http://apis.data.go.kr/B553077/api/open/sdsc2/storeListInDong";
       const params = {
@@ -274,6 +273,7 @@ export default new Vuex.Store({
         .get(SERVICE_URL, { params })
         .then(({ data }) => {
           commit("SET_AROUND_STORE_LIST", data.body.items);
+          //commit("SET_AROUND_STORE_LIST", data.body.items);
         })
         .catch((error) => {
           console.log(error);
