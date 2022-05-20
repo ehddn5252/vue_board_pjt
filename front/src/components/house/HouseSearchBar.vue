@@ -21,6 +21,13 @@
       <b-form-select
         v-model="gugunCode"
         :options="guguns"
+        @change="dongList"
+      ></b-form-select>
+    </b-col>
+    <b-col class="sm-3">
+      <b-form-select
+        v-model="dongCode"
+        :options="dongs"
         @change="searchApt"
       ></b-form-select>
     </b-col>
@@ -36,10 +43,11 @@ export default {
     return {
       sidoCode: null,
       gugunCode: null,
+      dongCode: null,
     };
   },
   computed: {
-    ...mapState(["sidos", "guguns", "houses"]),
+    ...mapState(["sidos", "guguns", "dongs", "houses"]),
     // sidos() {
     //   return this.$store.state.sidos;
     // },
@@ -51,19 +59,44 @@ export default {
     this.getSido();
   },
   methods: {
-    ...mapActions(["getSido", "getGugun", "getHouseList"]),
-    ...mapMutations(["CLEAR_SIDO_LIST", "CLEAR_GUGUN_LIST"]),
-    // sidoList() {
-    //   this.getSido();
-    // },
+    ...mapActions([
+      "getSidoHouseMap",
+      "getSido",
+      "getGugun",
+      "getHouseList",
+      "getDong",
+      "getHouse",
+    ]),
+    ...mapMutations(["CLEAR_SIDO_LIST", "CLEAR_GUGUN_LIST", "CLEAR_DONG_LIST"]),
+    sidoList() {
+      this.getSido();
+    },
     gugunList() {
       console.log(this.sidoCode);
       this.CLEAR_GUGUN_LIST();
       this.gugunCode = null;
       if (this.sidoCode) this.getGugun(this.sidoCode);
     },
+    // searchApt() {
+    //   if (this.gugunCode) this.getHouseList(this.gugunCode);
+    // },
+    dongList() {
+      this.CLEAR_DONG_LIST();
+      if (this.gugunCode) this.getDong(this.gugunCode);
+    },
     searchApt() {
-      if (this.gugunCode) this.getHouseList(this.gugunCode);
+      console.log("codes");
+      console.log(this.sidoCode);
+      console.log(this.gugunCode);
+      console.log(this.dongCode);
+      console.log("=============");
+      const datas = {
+        sidoCode: this.sidoCode,
+        gugunCode: this.gugunCode,
+        dongCode: this.dongCode,
+      };
+
+      if (this.dongCode) this.getHouseList(datas);
     },
   },
 };

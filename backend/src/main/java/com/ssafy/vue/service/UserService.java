@@ -9,7 +9,7 @@ public interface UserService {
 	// 중복확인
 	int idCheck(String id) throws Exception;
 	// 회원가입
-	void register(UserDto userDto) throws Exception;
+	boolean register(UserDto userDto) throws Exception;
 	// 로그인
 	UserDto login(Map<String, String> map) throws Exception;
 	// 탈퇴

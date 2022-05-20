@@ -23,13 +23,13 @@ export default {
     };
   },
   watch: {
-    aroundStoreLonLat: function (val) {
+    aroundStoreLatLon: function (val) {
       this.displayMarker(val);
     },
   },
   computed: {
-    aroundStoreLonLat() {
-      return this.$store.getters.aroundStoreLonLat;
+    aroundStoreLatLon() {
+      return this.$store.getters.aroundStoreLatLon;
     },
   },
 

@@ -55,7 +55,7 @@ public class DongListController {
 			
 			if(ddong.getRecentPrice()==null) continue;
 			
-			String name = ddong.getDongName();
+			String name = ddong.getDong();
 			Integer price = Integer.parseInt(ddong.getRecentPrice().replaceAll("[^0-9]", ""));
 			
 			if (dongL.get(name) != null) {
@@ -91,7 +91,7 @@ public class DongListController {
 			
 			HouseInfoDto info = new HouseInfoDto();
 			info.setRecentPrice(String.valueOf(entrySet.getValue() / num.get(entrySet.getKey())));
-			info.setDongName(entrySet.getKey());
+			info.setDong(entrySet.getKey());
 			info.setLat(lat);
 			info.setLng(lng);
 			

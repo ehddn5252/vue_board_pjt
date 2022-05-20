@@ -32,20 +32,33 @@ export default new Vuex.Store({
     environs: [],
     environ: null,
     mapList: [],
+
     todos: [
       // { title: '할 일1', completed: false },
       // { title: '할 일2', completed: false },
     ],
     comments: [],
     qnano: null,
+    // house map
+    houseMapList: [],
+    checkedHouse: [],
+    checkodMapList: [],
   },
   getters: {
-    aroundStoreLonLat(state) {
-      console.log("state.mapList");
-      console.log(state.mapList);
+    aroundStoreLatLon(state) {
       var arr = new Array(state.mapList.length);
       for (var i = 0; i < arr.length; ++i) {
         var latlon = [state.mapList[i].lat, state.mapList[i].lon];
+        arr[i] = latlon;
+      }
+      return arr;
+    },
+
+    houseLatLng(state) {
+      var arr = new Array(state.houseMapList.length);
+
+      for (var i = 0; i < arr.length; ++i) {
+        var latlon = [state.houseMapList[i].lat, state.houseMapList[i].lng];
         arr[i] = latlon;
       }
       return arr;
@@ -98,6 +111,12 @@ export default new Vuex.Store({
       console.log(state.mapList);
     },
 
+    SET_HOUSE_LIST(state, houses) {
+      console.log(" in House_LIST");
+      state.houses = JSON.parse(JSON.stringify(houses));
+      state.houseMapList = JSON.parse(JSON.stringify(houses));
+    },
+
     CLEAR_SIDO_LIST(state) {
       state.sidos = [{ value: null, text: "시도 선택" }];
     },
@@ -107,9 +126,7 @@ export default new Vuex.Store({
     CLEAR_DONG_LIST(state) {
       state.dongs = [{ value: null, text: "선택하세요" }];
     },
-    SET_HOUSE_LIST(state, houses) {
-      state.houses = houses;
-    },
+
     SET_DETAIL_HOUSE(state, house) {
       console.log("Mutations", house);
       state.house = house;
@@ -204,6 +221,7 @@ export default new Vuex.Store({
           commit("SET_GUGUN_LIST", data);
         })
         .catch((error) => {
+          console.log("error");
           console.log(error);
         });
     },
@@ -213,11 +231,10 @@ export default new Vuex.Store({
       http
         .get(`/map/dong`, { params })
         .then(({ data }) => {
-          console.log(data);
-          console.log(commit);
           commit("SET_DONG_LIST", data);
         })
         .catch((error) => {
+          console.log("error");
           console.log(error);
         });
     },
@@ -262,6 +279,8 @@ export default new Vuex.Store({
       http
         .get(SERVICE_URL, { params })
         .then(({ data }) => {
+          console.log("data.body.items");
+          console.log(data.body.items);
           commit("SET_AROUND_STORE_LIST", data.body.items);
           //commit("SET_AROUND_STORE_LIST", data.body.items);
         })
@@ -270,48 +289,49 @@ export default new Vuex.Store({
         });
     },
 
-    // getAroundStoreList({ commit }, datas) {
-    //   //const params = { sido: sidoCode, sigugun: gugunCode, dong: dongCode };
-    //   const regionCode = datas.dongCode;
-    //   const params = { regionCode: regionCode };
-    //   const url = `/interestinfo/store/searchByCode/`;
-    //   // `/codes/${this.chekcedStoreList}`;
-    //   console.log();
+    getHouseList({ commit }, data) {
+      const params = {
+        sidoCode: data.sidoCode,
+        gugunCode: data.gugunCode,
+        dongCode: data.dongCode,
+      };
+      http
+        .get(`/map/apt2`, { params })
+        .then(({ data }) => {
+          console.log("commit, data");
+          console.log(data);
+
+          commit("SET_HOUSE_LIST", data);
+        })
+        .catch((error) => {
+          console.log("error");
+          console.log(error);
+        });
+    },
+    // getHouseList({ commit }, gugunCode) {
+    //   // vue cli enviroment variables 검색
+    //   //.env.local file 생성.
+    //   // 반드시 VUE_APP으로 시작해야 한다.
+    //   const SERVICE_KEY = process.env.VUE_APP_APT_DEAL_API_KEY;
+    //   // const SERVICE_KEY =
+    //   //   "9Xo0vlglWcOBGUDxH8PPbuKnlBwbWU6aO7%2Bk3FV4baF9GXok1yxIEF%2BIwr2%2B%2F%2F4oVLT8bekKU%2Bk9ztkJO0wsBw%3D%3D";
+    //   const SERVICE_URL =
+    //     "http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev";
+    //   const params = {
+    //     LAWD_CD: gugunCode,
+    //     DEAL_YMD: "202203",
+    //     serviceKey: decodeURIComponent(SERVICE_KEY),
+    //   };
     //   http
-    //     .get(url, { params })
+    //     .get(SERVICE_URL, { params })
     //     .then(({ data }) => {
-    //       // console.log(commit, response);
-    //       commit("SET_DONG_LIST", data);
+    //       // console.log(commit, data);
+    //       commit("SET_HOUSE_LIST", data.response.body.items.item);
     //     })
     //     .catch((error) => {
     //       console.log(error);
     //     });
     // },
-
-    getHouseList({ commit }, gugunCode) {
-      // vue cli enviroment variables 검색
-      //.env.local file 생성.
-      // 반드시 VUE_APP으로 시작해야 한다.
-      const SERVICE_KEY = process.env.VUE_APP_APT_DEAL_API_KEY;
-      // const SERVICE_KEY =
-      //   "9Xo0vlglWcOBGUDxH8PPbuKnlBwbWU6aO7%2Bk3FV4baF9GXok1yxIEF%2BIwr2%2B%2F%2F4oVLT8bekKU%2Bk9ztkJO0wsBw%3D%3D";
-      const SERVICE_URL =
-        "http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev";
-      const params = {
-        LAWD_CD: gugunCode,
-        DEAL_YMD: "202203",
-        serviceKey: decodeURIComponent(SERVICE_KEY),
-      };
-      http
-        .get(SERVICE_URL, { params })
-        .then(({ data }) => {
-          // console.log(commit, data);
-          commit("SET_HOUSE_LIST", data.response.body.items.item);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
     detailHouse({ commit }, house) {
       // 나중에 house.일련번호를 이용하여 API 호출
       // console.log(commit, house);

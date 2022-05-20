@@ -58,7 +58,7 @@ const routes = [
     name: "board",
     component: () => import("@/views/BoardView.vue"),
     redirect: "/board/list",
-    beforeEnter: onlyAuthUser,
+    // beforeEnter: onlyAuthUser,
     children: [
       {
         path: "list",
@@ -100,7 +100,7 @@ const routes = [
     name: "interestinfo",
     component: () => import("@/views/AroundStoreView.vue"),
     redirect: "/interestinfo/store",
-    beforeEnter: onlyAuthUser,
+    // beforeEnter: onlyAuthUser,
     children: [
       {
         path: "store",
@@ -150,7 +150,7 @@ const routes = [
   {
     path: "/house",
     name: "house",
-    beforeEnter: onlyAuthUser,
+    // beforeEnter: onlyAuthUser,
     component: () => import("@/views/HouseView.vue"),
   },
   {
