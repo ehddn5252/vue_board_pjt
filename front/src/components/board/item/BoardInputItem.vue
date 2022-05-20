@@ -2,7 +2,7 @@
   <b-row class="mb-1">
     <b-col style="text-align: left">
       <b-form @submit="onSubmit" @reset="onReset">
-        <b-form-group
+        <!-- <b-form-group
           id="userid-group"
           label="작성자:"
           label-for="userid"
@@ -16,7 +16,7 @@
             required
             placeholder="작성자 입력..."
           ></b-form-input>
-        </b-form-group>
+        </b-form-group> -->
 
         <b-form-group
           id="subject-group"
@@ -61,34 +61,31 @@
 
 <script>
 import http from "@/api/http";
-
+import { mapState } from "vuex";
+const memberStore = "memberStore";
 export default {
   name: "BoardInputItem",
   data() {
     return {
       article: {
         articleno: 0,
-        userid: "",
         subject: "",
         content: "",
       },
       isUserid: false,
     };
   },
+  computed: {
+    ...mapState(memberStore, ["userInfo"]),
+  },
   props: {
     type: { type: String },
   },
   created() {
-    if (this.type === "modify") {
-      http.get(`/board/${this.$route.params.articleno}`).then(({ data }) => {
-        // this.article.articleno = data.article.articleno;
-        // this.article.userid = data.article.userid;
-        // this.article.subject = data.article.subject;
-        // this.article.content = data.article.content;
-        this.article = data;
-      });
-      this.isUserid = true;
-    }
+    http.get(`/board/${this.$route.params.articleno}`).then(({ data }) => {
+      this.article = data;
+    });
+    this.isUserid = true;
   },
   methods: {
     onSubmit(event) {
@@ -96,12 +93,8 @@ export default {
 
       let err = true;
       let msg = "";
-      !this.article.userid &&
-        ((msg = "작성자 입력해주세요"),
-        (err = false),
-        this.$refs.userid.focus());
-      err &&
-        !this.article.subject &&
+
+      !this.article.subject &&
         ((msg = "제목 입력해주세요"),
         (err = false),
         this.$refs.subject.focus());
@@ -125,7 +118,7 @@ export default {
     registArticle() {
       http
         .post(`/board`, {
-          userid: this.article.userid,
+          userid: this.userInfo.userId,
           subject: this.article.subject,
           content: this.article.content,
         })
@@ -142,7 +135,7 @@ export default {
       http
         .put(`/board/${this.article.articleno}`, {
           articleno: this.article.articleno,
-          userid: this.article.userid,
+          userid: this.userInfo.userId,
           subject: this.article.subject,
           content: this.article.content,
         })

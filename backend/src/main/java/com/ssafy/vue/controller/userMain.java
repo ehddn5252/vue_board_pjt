@@ -11,6 +11,8 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -33,6 +35,8 @@ import com.ssafy.vue.dto.UserDto;
 public class userMain  {
 	
 	private static final Logger logger = LoggerFactory.getLogger(userMain.class);
+	private static final String SUCCESS = "success";
+	private static final String FAIL = "fail";
 	
 	@Autowired
 	private UserService userService;
@@ -43,13 +47,30 @@ public class userMain  {
 	}
 	
 	@PostMapping("/register")
-	public String register(UserDto userDto, Model model) throws Exception {
+	public ResponseEntity<String> register(@RequestBody UserDto userDto) throws Exception {
+		System.out.println("is in register");
+		logger.debug("writeBoard - 호출");
 		userDto.setManager("user");
 		userDto.setRegistDate(LocalDate.now().toString());
 		logger.debug("userDto info : {}", userDto);
-		userService.register(userDto);
-		return "redirect:/";
+
+		if (userService.register(userDto)) {
+			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		}
+		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
+
+	
+	
+//	@PostMapping("/register")
+//	public String register(UserDto userDto, Model model) throws Exception {
+//		System.out.println("is in register");
+//		userDto.setManager("user");
+//		userDto.setRegistDate(LocalDate.now().toString());
+//		logger.debug("userDto info : {}", userDto);
+//		userService.register(userDto);
+//		return "redirect:/";
+//	}
 	
 	@GetMapping("/idcheck")
 	public @ResponseBody String idCheck(@RequestParam("ckid") String checkId) throws Exception {

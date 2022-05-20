@@ -1,102 +1,242 @@
 <template>
-  <b-container class="bv-example-row mt-3">
-    <b-row>
-      <b-col>
-        <b-alert variant="secondary" show><h3>회원가입</h3></b-alert>
+  <div class="registercontainer">
+    <b-row class="title">
+      <b-col style="text-align: left">
+        <b-form @submit.stop.prevent @submit="onSubmit" @reset="onReset">
+          <b-form-group
+            class="user-details"
+            id="userName-group"
+            label="이름:"
+            label-for="userName"
+          >
+            <b-form-input
+              class="input-box"
+              id="userName"
+              v-model="userInfo.userName"
+              type="text"
+              required
+              placeholder="이름 입력..."
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group id="userName-group" label="아이디:" label-for="userId">
+            <b-form-input
+              id="userId"
+              class="input-box"
+              v-model="userInfo.userId"
+              type="text"
+              required
+              placeholder="아이디 입력..."
+            ></b-form-input>
+            <b-form-invalid-feedback :state="validation">
+              Your user ID must be 5-12 characters long.
+            </b-form-invalid-feedback>
+            <b-form-valid-feedback :state="validation">
+              Looks Good.
+            </b-form-valid-feedback>
+          </b-form-group>
+          <b-form-group
+            id="userPhone-group"
+            label="전화번호:"
+            label-for="phoneNum"
+          >
+            <b-form-input
+              id="phoneNum"
+              class="input-box"
+              v-model="userInfo.phoneNum"
+              type="text"
+              required
+              placeholder="전화번호 입력..."
+            ></b-form-input>
+          </b-form-group>
+
+          <b-form-group
+            class="input-box"
+            id="userPwd-group"
+            label="비밀번호:"
+            label-for="userPwd"
+          >
+            <b-form-input
+              id="userPwd"
+              class="input-box"
+              v-model="userInfo.userPwd"
+              type="text"
+              required
+              placeholder="비밀번호 입력..."
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group
+            id="userEmail-group"
+            label="이메일:"
+            label-for="userEmail"
+          >
+            <b-form-input
+              id="userEmail"
+              v-model="userInfo.userEmail"
+              type="text"
+              required
+              placeholder="이메일 입력..."
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group
+            class="gender-details"
+            id="userGender-group"
+            label="성별:"
+            label-for="userGender"
+          >
+            <b-form-select
+              id="userGender"
+              v-model="userInfo.userGender"
+              class="mb-2 mr-sm-2 mb-sm-0"
+              :options="[
+                { text: 'Choose...', value: null },
+                '남',
+                '여',
+                '비밀',
+              ]"
+              :value="null"
+            ></b-form-select>
+          </b-form-group>
+
+          <b-form-group
+            id="userBirth-group"
+            label="생일:"
+            label-for="userBirth"
+          >
+            <b-form-input
+              id="userBirth"
+              v-model="userInfo.userBirth"
+              type="text"
+              required
+              placeholder="생일 입력..."
+            ></b-form-input>
+          </b-form-group>
+          <b-button type="submit" variant="primary" class="m-1"
+            >회원 가입 완료</b-button
+          >
+          <b-button type="reset" variant="danger" class="m-1">초기화</b-button>
+        </b-form>
       </b-col>
     </b-row>
-    <section class="signup-container text-left">
-      <div class="registercontainer">
-        <div class="title">회원가입</div>
-        <div class="content">
-          <form action="/user/register" method="post">
-            <div class="user-details">
-              <div class="input-box">
-                <span class="details">성함</span>
-                <input
-                  type="text"
-                  name="userName"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div class="input-box">
-                <span class="details">전화번호</span>
-                <input
-                  type="text"
-                  name="phoneNum"
-                  placeholder="Enter your phone number"
-                  required
-                />
-              </div>
-              <div class="input-box">
-                <span class="details">이메일</span>
-                <input
-                  type="email"
-                  name="userEmail"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div class="input-box">
-                <span class="details">생일</span>
-                <input type="date" name="userBirth" required />
-              </div>
-              <div class="input-box">
-                <span class="details">아이디</span>
-                <input
-                  id="registId"
-                  type="text"
-                  name="userId"
-                  placeholder="Enter your id"
-                  required
-                  autocomplete="off"
-                />
-                <div id="idresult" class="mt-1"></div>
-              </div>
-              <div class="input-box">
-                <span class="details">비밀번호</span>
-                <input
-                  type="password"
-                  name="userPwd"
-                  placeholder="Enter your password"
-                  required
-                />
-              </div>
-            </div>
-            <div class="gender-details">
-              <input type="radio" name="userGender" id="dot-1" value="남" />
-              <input type="radio" name="userGender" id="dot-2" value="여" />
-              <input type="radio" name="userGender" id="dot-3" value="비밀" />
-              <span class="gender-title">성별</span>
-              <div class="category">
-                <label for="dot-1">
-                  <span class="dot one"></span>
-                  <span class="gender">남</span>
-                </label>
-                <label for="dot-2">
-                  <span class="dot two"></span>
-                  <span class="gender">여</span>
-                </label>
-                <label for="dot-3">
-                  <span class="dot three"></span>
-                  <span class="gender">비밀</span>
-                </label>
-              </div>
-            </div>
-            <div class="button">
-              <input type="submit" id="registerBtn" value="제출" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </b-container>
+  </div>
 </template>
 
 <script>
+import http from "@/api/http";
+
 export default {
   name: "MemberRegister",
+
+  data() {
+    return {
+      userInfo: {
+        userId: "",
+        userName: "",
+        phoneNum: "",
+        userEmail: "",
+        userPwd: "",
+        userGender: "",
+        userBirth: "",
+      },
+      type: "",
+    };
+  },
+
+  computed: {
+    validation() {
+      return (
+        this.userInfo.userId.length > 4 && this.userInfo.userId.length < 13
+      );
+    },
+  },
+
+  methods: {
+    onSubmit(event) {
+      console.log("int onSubmit");
+      event.preventDefault();
+
+      let err = true;
+      let msg = "";
+      !this.userInfo.userName &&
+        ((msg = "이름 입력해주세요"),
+        (err = false),
+        this.$refs.userName.focus());
+      err &&
+        !this.userInfo.phoneNum &&
+        ((msg = "휴대폰 번호를 입력해주세요"),
+        (err = false),
+        this.$refs.phoneNum.focus());
+      err &&
+        !this.userInfo.userEmail &&
+        ((msg = "이메일 입력해주세요"),
+        (err = false),
+        this.$refs.userEmail.focus());
+      err &&
+        !this.userInfo.userPwd &&
+        ((msg = "패스워드를 입력해주세요"),
+        (err = false),
+        this.$refs.userPwd.focus());
+      err &&
+        !this.userInfo.userGender &&
+        ((msg = "성별을 입력해주세요"),
+        (err = false),
+        this.$refs.userGender.focus());
+      err &&
+        !this.userInfo.userBirth &&
+        ((msg = "내용 입력해주세요"),
+        (err = false),
+        this.$refs.userBirth.focus());
+      err &&
+        !this.userInfo.userId &&
+        ((msg = "아이디를 입력해주세요"),
+        (err = false),
+        this.$refs.userId.focus());
+
+      if (!err) alert(msg);
+      else {
+        console.log("this.registerUserInfo() is called");
+        this.registUserInfo();
+      }
+    },
+
+    onReset(event) {
+      event.preventDefault();
+      this.userInfo.userId = "";
+      this.userInfo.userName = "";
+      this.userInfo.phoneNum = "";
+      this.userInfo.userEmail = "";
+      this.userInfo.userPwd = "";
+      this.userInfo.userGender = "";
+      this.userInfo.userBirth = "";
+      // this.$router.push({ name: "signUp" });
+    },
+
+    registUserInfo() {
+      console.log("in registerUserInfo");
+      http
+        .post(`/user/register`, {
+          userId: this.userInfo.userId,
+          userName: this.userInfo.userName,
+          phoneNum: this.userInfo.phoneNum,
+          userEmail: this.userInfo.userEmail,
+          userPwd: this.userInfo.userPwd,
+          userGender: this.userInfo.userGender,
+          userBirth: this.userInfo.userBirth,
+        })
+        .then(({ data }) => {
+          let msg = "등록 처리시 문제가 발생했습니다.";
+          if (data === "success") {
+            msg = "등록이 완료되었습니다.";
+          }
+          alert(msg);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    moveList() {
+      this.$router.push({ name: "signUp" });
+    },
+  },
 };
 </script>
 

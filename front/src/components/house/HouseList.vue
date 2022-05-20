@@ -20,6 +20,7 @@ import { mapState } from "vuex";
 export default {
   name: "HouseList",
   components: {
+    // ...mapState(["house"]),
     HouseListItem,
   },
   data() {
